@@ -1,0 +1,1287 @@
+{
+    "meta":  {
+                 "generatedAt":  "2026-06-03T22:02:58",
+                 "quizPickCount":  10,
+                 "choiceCount":  4,
+                 "winLines":  2
+             },
+    "boardLayout":  [
+                        "furniture",
+                        "logo",
+                        "movie",
+                        "character",
+                        "idol",
+                        "nonsense",
+                        "charade",
+                        "thigh",
+                        "cup"
+                    ],
+    "quizGames":  {
+                      "furniture":  {
+                                        "id":  "furniture",
+                                        "title":  "가구 보고 브랜드 맞히기",
+                                        "type":  "image-choice",
+                                        "prompt":  "이 가구의 브랜드는?",
+                                        "answerLabel":  "브랜드",
+                                        "pool":  [
+                                                     {
+                                                         "id":  "furniture-01",
+                                                         "image":  "assets/furniture/furniture-01.jpg",
+                                                         "answer":  "놀",
+                                                         "sub":  "바실리 체어"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-02",
+                                                         "image":  "assets/furniture/furniture-02.png",
+                                                         "answer":  "루이스폴센",
+                                                         "sub":  "AJ"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-03",
+                                                         "image":  "assets/furniture/furniture-03.png",
+                                                         "answer":  "루이스폴센",
+                                                         "sub":  "토미시"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-04",
+                                                         "image":  "assets/furniture/furniture-04.png",
+                                                         "answer":  "무토",
+                                                         "sub":  "도즈 라운지체어"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-05",
+                                                         "image":  "assets/furniture/furniture-05.png",
+                                                         "answer":  "무토",
+                                                         "sub":  "빔 램프"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-06",
+                                                         "image":  "assets/furniture/furniture-06.png",
+                                                         "answer":  "무토",
+                                                         "sub":  "팁 테이블 램프"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-07",
+                                                         "image":  "assets/furniture/furniture-07.png",
+                                                         "answer":  "무토",
+                                                         "sub":  "피버 암체어"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-08",
+                                                         "image":  "assets/furniture/furniture-08.png",
+                                                         "answer":  "비트라",
+                                                         "sub":  "스탠다드"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-09",
+                                                         "image":  "assets/furniture/furniture-09.png",
+                                                         "answer":  "비트라",
+                                                         "sub":  "울탱"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-10",
+                                                         "image":  "assets/furniture/furniture-10.jpg",
+                                                         "answer":  "비트라",
+                                                         "sub":  "임스 버드"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-11",
+                                                         "image":  "assets/furniture/furniture-11.jpg",
+                                                         "answer":  "비트라",
+                                                         "sub":  "하트 콘"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-12",
+                                                         "image":  "assets/furniture/furniture-12.png",
+                                                         "answer":  "알레시",
+                                                         "sub":  "9093"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-13",
+                                                         "image":  "assets/furniture/furniture-13.png",
+                                                         "answer":  "알레시",
+                                                         "sub":  "ES20"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-14",
+                                                         "image":  "assets/furniture/furniture-14.png",
+                                                         "answer":  "알레시",
+                                                         "sub":  "메디테라네오"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-15",
+                                                         "image":  "assets/furniture/furniture-15.png",
+                                                         "answer":  "알레시",
+                                                         "sub":  "플리쎄"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-16",
+                                                         "image":  "assets/furniture/furniture-16.png",
+                                                         "answer":  "이케아",
+                                                         "sub":  "뒤블링에"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-17",
+                                                         "image":  "assets/furniture/furniture-17.png",
+                                                         "answer":  "이케아",
+                                                         "sub":  "바름블릭스트"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-18",
+                                                         "image":  "assets/furniture/furniture-18.png",
+                                                         "answer":  "이케아",
+                                                         "sub":  "하브베리"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-19",
+                                                         "image":  "assets/furniture/furniture-19.jpg",
+                                                         "answer":  "카시나",
+                                                         "sub":  "LC3"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-20",
+                                                         "image":  "assets/furniture/furniture-20.jpg",
+                                                         "answer":  "카시나",
+                                                         "sub":  "LC4"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-21",
+                                                         "image":  "assets/furniture/furniture-21.png",
+                                                         "answer":  "프리츠한센",
+                                                         "sub":  "PK22"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-22",
+                                                         "image":  "assets/furniture/furniture-22.png",
+                                                         "answer":  "프리츠한센",
+                                                         "sub":  "나이트 아월"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-23",
+                                                         "image":  "assets/furniture/furniture-23.png",
+                                                         "answer":  "프리츠한센",
+                                                         "sub":  "시리즈7"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-24",
+                                                         "image":  "assets/furniture/furniture-24.png",
+                                                         "answer":  "프리츠한센",
+                                                         "sub":  "에그 체어"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-25",
+                                                         "image":  "assets/furniture/furniture-25.png",
+                                                         "answer":  "프리츠한센",
+                                                         "sub":  "엔트 체어"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-26",
+                                                         "image":  "assets/furniture/furniture-26.jpg",
+                                                         "answer":  "허먼밀러",
+                                                         "sub":  "쉘 체어"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-27",
+                                                         "image":  "assets/furniture/furniture-27.png",
+                                                         "answer":  "허먼밀러",
+                                                         "sub":  "카펠리 스툴"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-28",
+                                                         "image":  "assets/furniture/furniture-28.png",
+                                                         "answer":  "허먼밀러",
+                                                         "sub":  "폴리우드 체어"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-29",
+                                                         "image":  "assets/furniture/furniture-29.jpg",
+                                                         "answer":  "헤이",
+                                                         "sub":  "보울 테이블"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-30",
+                                                         "image":  "assets/furniture/furniture-30.jpg",
+                                                         "answer":  "헤이",
+                                                         "sub":  "엘리먼트 체어"
+                                                     }
+                                                 ]
+                                    },
+                      "logo":  {
+                                   "id":  "logo",
+                                   "title":  "로고 보고 브랜드 맞히기",
+                                   "type":  "image-choice",
+                                   "prompt":  "이 로고의 회사/브랜드는?",
+                                   "answerLabel":  "브랜드",
+                                   "pool":  [
+                                                {
+                                                    "id":  "logo-01",
+                                                    "image":  "assets/logo/logo-01.png",
+                                                    "answer":  "그록",
+                                                    "sub":  "",
+                                                    "hint":  "X(옛 트위터)에서 만날 수 있는 인공지능 비서"
+                                                },
+                                                {
+                                                    "id":  "logo-02",
+                                                    "image":  "assets/logo/logo-02.png",
+                                                    "answer":  "깃허브",
+                                                    "sub":  "",
+                                                    "hint":  "개발자들이 코드를 올리고 협업하는, 고양이 마스코트의 공간"
+                                                },
+                                                {
+                                                    "id":  "logo-03",
+                                                    "image":  "assets/logo/logo-03.png",
+                                                    "answer":  "네이버지도",
+                                                    "sub":  "",
+                                                    "hint":  "초록색 검색 포털이 만든 길찾기 앱"
+                                                },
+                                                {
+                                                    "id":  "logo-04",
+                                                    "image":  "assets/logo/logo-04.png",
+                                                    "answer":  "도미노피자",
+                                                    "sub":  "",
+                                                    "hint":  "30분 배달로 유명했던 피자 체인"
+                                                },
+                                                {
+                                                    "id":  "logo-05",
+                                                    "image":  "assets/logo/logo-05.png",
+                                                    "answer":  "마세라티",
+                                                    "sub":  "",
+                                                    "hint":  "삼지창 엠블럼의 이탈리아 고급 자동차"
+                                                },
+                                                {
+                                                    "id":  "logo-06",
+                                                    "image":  "assets/logo/logo-06.png",
+                                                    "answer":  "마쯔다",
+                                                    "sub":  "",
+                                                    "hint":  "로터리 엔진으로 알려진 일본 자동차 회사"
+                                                },
+                                                {
+                                                    "id":  "logo-07",
+                                                    "image":  "assets/logo/logo-07.jpg",
+                                                    "answer":  "미즈노",
+                                                    "sub":  "",
+                                                    "hint":  "러닝화와 야구 장비로 유명한 일본 스포츠 브랜드"
+                                                },
+                                                {
+                                                    "id":  "logo-08",
+                                                    "image":  "assets/logo/logo-08.png",
+                                                    "answer":  "블루보틀",
+                                                    "sub":  "",
+                                                    "hint":  "파란 병이 상징인 미국發 스페셜티 커피"
+                                                },
+                                                {
+                                                    "id":  "logo-09",
+                                                    "image":  "assets/logo/logo-09.png",
+                                                    "answer":  "빅토리아시크릿",
+                                                    "sub":  "",
+                                                    "hint":  "천사 날개 패션쇼로 유명했던 란제리 브랜드"
+                                                },
+                                                {
+                                                    "id":  "logo-10",
+                                                    "image":  "assets/logo/logo-10.png",
+                                                    "answer":  "빗썸",
+                                                    "sub":  "",
+                                                    "hint":  "국내 대표 가상자산(코인) 거래소 중 하나"
+                                                },
+                                                {
+                                                    "id":  "logo-11",
+                                                    "image":  "assets/logo/logo-11.png",
+                                                    "answer":  "스냅쳇",
+                                                    "sub":  "",
+                                                    "hint":  "유령 아이콘, 사라지는 사진 메시지 앱"
+                                                },
+                                                {
+                                                    "id":  "logo-12",
+                                                    "image":  "assets/logo/logo-12.png",
+                                                    "answer":  "쏘카",
+                                                    "sub":  "",
+                                                    "hint":  "필요할 때 빌려 타는 국내 차량 공유 서비스"
+                                                },
+                                                {
+                                                    "id":  "logo-13",
+                                                    "image":  "assets/logo/logo-13.png",
+                                                    "answer":  "쓰레드",
+                                                    "sub":  "",
+                                                    "hint":  "인스타그램이 만든 텍스트 기반 SNS"
+                                                },
+                                                {
+                                                    "id":  "logo-14",
+                                                    "image":  "assets/logo/logo-14.png",
+                                                    "answer":  "씨이에스",
+                                                    "sub":  "",
+                                                    "hint":  "매년 라스베이거스에서 열리는 세계 최대 가전·기술 전시회"
+                                                },
+                                                {
+                                                    "id":  "logo-15",
+                                                    "image":  "assets/logo/logo-15.png",
+                                                    "answer":  "아마존",
+                                                    "sub":  "",
+                                                    "hint":  "A에서 Z까지, 미소 화살표 로고의 글로벌 쇼핑·클라우드 기업"
+                                                },
+                                                {
+                                                    "id":  "logo-16",
+                                                    "image":  "assets/logo/logo-16.png",
+                                                    "answer":  "야마하",
+                                                    "sub":  "",
+                                                    "hint":  "피아노부터 오토바이까지 만드는 일본 브랜드"
+                                                },
+                                                {
+                                                    "id":  "logo-17",
+                                                    "image":  "assets/logo/logo-17.png",
+                                                    "answer":  "야후",
+                                                    "sub":  "",
+                                                    "hint":  "느낌표가 붙은 초창기 인터넷 포털"
+                                                },
+                                                {
+                                                    "id":  "logo-18",
+                                                    "image":  "assets/logo/logo-18.png",
+                                                    "answer":  "오늘의집",
+                                                    "sub":  "",
+                                                    "hint":  "인테리어 사진을 구경하고 가구를 사는 국내 앱"
+                                                },
+                                                {
+                                                    "id":  "logo-19",
+                                                    "image":  "assets/logo/logo-19.png",
+                                                    "answer":  "오뚜기",
+                                                    "sub":  "",
+                                                    "hint":  "3분 카레와 진라면으로 익숙한 국내 식품 회사"
+                                                },
+                                                {
+                                                    "id":  "logo-20",
+                                                    "image":  "assets/logo/logo-20.jpg",
+                                                    "answer":  "오메가",
+                                                    "sub":  "",
+                                                    "hint":  "달 착륙과 007이 찬 스위스 시계"
+                                                },
+                                                {
+                                                    "id":  "logo-21",
+                                                    "image":  "assets/logo/logo-21.png",
+                                                    "answer":  "이디야",
+                                                    "sub":  "",
+                                                    "hint":  "가성비로 매장 수가 많은 국내 커피 프랜차이즈"
+                                                },
+                                                {
+                                                    "id":  "logo-22",
+                                                    "image":  "assets/logo/logo-22.png",
+                                                    "answer":  "제미나이",
+                                                    "sub":  "",
+                                                    "hint":  "구글이 만든 생성형 AI"
+                                                },
+                                                {
+                                                    "id":  "logo-23",
+                                                    "image":  "assets/logo/logo-23.png",
+                                                    "answer":  "지방시",
+                                                    "sub":  "",
+                                                    "hint":  "오드리 헵번이 사랑한 프랑스 명품 패션 하우스"
+                                                },
+                                                {
+                                                    "id":  "logo-24",
+                                                    "image":  "assets/logo/logo-24.png",
+                                                    "answer":  "크래프톤",
+                                                    "sub":  "",
+                                                    "hint":  "배틀그라운드를 만든 국내 게임사"
+                                                },
+                                                {
+                                                    "id":  "logo-25",
+                                                    "image":  "assets/logo/logo-25.png",
+                                                    "answer":  "크린토피아",
+                                                    "sub":  "",
+                                                    "hint":  "동네에서 흔한 셀프·드라이 세탁 프랜차이즈"
+                                                },
+                                                {
+                                                    "id":  "logo-26",
+                                                    "image":  "assets/logo/logo-26.png",
+                                                    "answer":  "틱톡",
+                                                    "sub":  "",
+                                                    "hint":  "짧은 세로 영상으로 전 세계가 빠진 앱"
+                                                },
+                                                {
+                                                    "id":  "logo-27",
+                                                    "image":  "assets/logo/logo-27.jpg",
+                                                    "answer":  "푸조",
+                                                    "sub":  "",
+                                                    "hint":  "사자 엠블럼의 프랑스 자동차"
+                                                },
+                                                {
+                                                    "id":  "logo-28",
+                                                    "image":  "assets/logo/logo-28.png",
+                                                    "answer":  "한국타이어",
+                                                    "sub":  "",
+                                                    "hint":  "국내 대표 타이어 제조사"
+                                                },
+                                                {
+                                                    "id":  "logo-29",
+                                                    "image":  "assets/logo/logo-29.png",
+                                                    "answer":  "헤지스",
+                                                    "sub":  "",
+                                                    "hint":  "영국풍 트래디셔널 감성의 국내 패션 브랜드"
+                                                },
+                                                {
+                                                    "id":  "logo-30",
+                                                    "image":  "assets/logo/logo-30.png",
+                                                    "answer":  "혼다",
+                                                    "sub":  "",
+                                                    "hint":  "오토바이와 자동차를 만드는 일본 회사, H 엠블럼"
+                                                }
+                                            ]
+                               },
+                      "movie":  {
+                                    "id":  "movie",
+                                    "title":  "영화 장면 보고 제목 맞히기",
+                                    "type":  "image-choice",
+                                    "prompt":  "이 장면이 나오는 영화는?",
+                                    "answerLabel":  "영화 제목",
+                                    "pool":  [
+                                                 {
+                                                     "id":  "movie-01",
+                                                     "image":  "assets/movie/movie-01.jpg",
+                                                     "answer":  "7인의사무라이",
+                                                     "sub":  "",
+                                                     "hint":  "구로사와 아키라의 흑백 명작, 마을을 지키는 검객들"
+                                                 },
+                                                 {
+                                                     "id":  "movie-02",
+                                                     "image":  "assets/movie/movie-02.png",
+                                                     "answer":  "가위손",
+                                                     "sub":  "",
+                                                     "hint":  "팀 버튼 감독, 손이 가위인 창백한 남자"
+                                                 },
+                                                 {
+                                                     "id":  "movie-03",
+                                                     "image":  "assets/movie/movie-03.jpg",
+                                                     "answer":  "그랜드부다패스트호텔",
+                                                     "sub":  "",
+                                                     "hint":  "웨스 앤더슨의 대칭미, 분홍빛 호텔 컨시어지 이야기"
+                                                 },
+                                                 {
+                                                     "id":  "movie-04",
+                                                     "image":  "assets/movie/movie-04.jpg",
+                                                     "answer":  "그린마일",
+                                                     "sub":  "",
+                                                     "hint":  "사형수 교도소에서 일어나는 기적 같은 거인 이야기"
+                                                 },
+                                                 {
+                                                     "id":  "movie-05",
+                                                     "image":  "assets/movie/movie-05.jpg",
+                                                     "answer":  "니모를찾아서",
+                                                     "sub":  "",
+                                                     "hint":  "잃어버린 흰동가리 아들을 찾아 나선 아빠 물고기"
+                                                 },
+                                                 {
+                                                     "id":  "movie-06",
+                                                     "image":  "assets/movie/movie-06.jpg",
+                                                     "answer":  "대부",
+                                                     "sub":  "",
+                                                     "hint":  "마피아 가문의 권력 승계를 그린 고전"
+                                                 },
+                                                 {
+                                                     "id":  "movie-07",
+                                                     "image":  "assets/movie/movie-07.jpg",
+                                                     "answer":  "데드풀",
+                                                     "sub":  "",
+                                                     "hint":  "빨간 슈트에 입이 거친 마블 안티히어로"
+                                                 },
+                                                 {
+                                                     "id":  "movie-08",
+                                                     "image":  "assets/movie/movie-08.png",
+                                                     "answer":  "라라랜드",
+                                                     "sub":  "",
+                                                     "hint":  "재즈 피아니스트와 배우 지망생의 LA 뮤지컬"
+                                                 },
+                                                 {
+                                                     "id":  "movie-09",
+                                                     "image":  "assets/movie/movie-09.png",
+                                                     "answer":  "라붐",
+                                                     "sub":  "",
+                                                     "hint":  "소피 마르소, 헤드폰 장면으로 유명한 프랑스 청춘영화"
+                                                 },
+                                                 {
+                                                     "id":  "movie-10",
+                                                     "image":  "assets/movie/movie-10.jpg",
+                                                     "answer":  "라이언일병구하기",
+                                                     "sub":  "",
+                                                     "hint":  "노르망디 상륙, 한 병사를 구하러 가는 전쟁영화"
+                                                 },
+                                                 {
+                                                     "id":  "movie-11",
+                                                     "image":  "assets/movie/movie-11.jpg",
+                                                     "answer":  "라이온킹",
+                                                     "sub":  "",
+                                                     "hint":  "아버지를 잃고 왕으로 성장하는 사자 이야기"
+                                                 },
+                                                 {
+                                                     "id":  "movie-12",
+                                                     "image":  "assets/movie/movie-12.jpg",
+                                                     "answer":  "루카",
+                                                     "sub":  "",
+                                                     "hint":  "이탈리아 바닷가, 사실은 바다 괴물인 소년들의 여름"
+                                                 },
+                                                 {
+                                                     "id":  "movie-13",
+                                                     "image":  "assets/movie/movie-13.jpg",
+                                                     "answer":  "모아나",
+                                                     "sub":  "",
+                                                     "hint":  "바다가 선택한 섬마을 소녀의 항해"
+                                                 },
+                                                 {
+                                                     "id":  "movie-14",
+                                                     "image":  "assets/movie/movie-14.png",
+                                                     "answer":  "미드소마",
+                                                     "sub":  "",
+                                                     "hint":  "스웨덴 백야 축제에서 벌어지는 공포"
+                                                 },
+                                                 {
+                                                     "id":  "movie-15",
+                                                     "image":  "assets/movie/movie-15.jpg",
+                                                     "answer":  "반지의제왕",
+                                                     "sub":  "",
+                                                     "hint":  "절대반지를 파괴하러 떠나는 원정대"
+                                                 },
+                                                 {
+                                                     "id":  "movie-16",
+                                                     "image":  "assets/movie/movie-16.jpg",
+                                                     "answer":  "쇼생크탈출",
+                                                     "sub":  "",
+                                                     "hint":  "억울한 누명, 희망을 잃지 않은 교도소 이야기"
+                                                 },
+                                                 {
+                                                     "id":  "movie-17",
+                                                     "image":  "assets/movie/movie-17.jpg",
+                                                     "answer":  "스페이스오디세이",
+                                                     "sub":  "",
+                                                     "hint":  "검은 돌기둥과 인공지능 HAL, 큐브릭의 SF 고전"
+                                                 },
+                                                 {
+                                                     "id":  "movie-18",
+                                                     "image":  "assets/movie/movie-18.jpg",
+                                                     "answer":  "아멜리아",
+                                                     "sub":  "",
+                                                     "hint":  "파리를 배경으로 한, 엉뚱하고 사랑스러운 여인의 이야기"
+                                                 },
+                                                 {
+                                                     "id":  "movie-19",
+                                                     "image":  "assets/movie/movie-19.png",
+                                                     "answer":  "양들의침묵",
+                                                     "sub":  "",
+                                                     "hint":  "FBI 수습요원과 식인 박사의 심리 추적"
+                                                 },
+                                                 {
+                                                     "id":  "movie-20",
+                                                     "image":  "assets/movie/movie-20.png",
+                                                     "answer":  "원스",
+                                                     "sub":  "",
+                                                     "hint":  "더블린 거리 음악가들의, 음악 같은 사랑"
+                                                 },
+                                                 {
+                                                     "id":  "movie-21",
+                                                     "image":  "assets/movie/movie-21.jpg",
+                                                     "answer":  "위플래쉬",
+                                                     "sub":  "",
+                                                     "hint":  "폭군 같은 교수와 드러머의 광기 어린 연습"
+                                                 },
+                                                 {
+                                                     "id":  "movie-22",
+                                                     "image":  "assets/movie/movie-22.jpg",
+                                                     "answer":  "유주얼서스팩트",
+                                                     "sub":  "",
+                                                     "hint":  "절름발이가 들려주는, 반전의 범죄 이야기"
+                                                 },
+                                                 {
+                                                     "id":  "movie-23",
+                                                     "image":  "assets/movie/movie-23.jpg",
+                                                     "answer":  "인생은아름다워",
+                                                     "sub":  "",
+                                                     "hint":  "수용소에서 아들에게 게임이라 속인 아버지"
+                                                 },
+                                                 {
+                                                     "id":  "movie-24",
+                                                     "image":  "assets/movie/movie-24.jpg",
+                                                     "answer":  "인터스텔라",
+                                                     "sub":  "",
+                                                     "hint":  "딸을 두고 떠난 우주, 시간과 중력의 SF"
+                                                 },
+                                                 {
+                                                     "id":  "movie-25",
+                                                     "image":  "assets/movie/movie-25.jpg",
+                                                     "answer":  "큐브",
+                                                     "sub":  "",
+                                                     "hint":  "함정 가득한 정육면체 방에 갇힌 사람들"
+                                                 },
+                                                 {
+                                                     "id":  "movie-26",
+                                                     "image":  "assets/movie/movie-26.jpg",
+                                                     "answer":  "토이스토리",
+                                                     "sub":  "",
+                                                     "hint":  "주인이 없을 때 살아 움직이는 장난감들"
+                                                 },
+                                                 {
+                                                     "id":  "movie-27",
+                                                     "image":  "assets/movie/movie-27.png",
+                                                     "answer":  "트루먼쇼",
+                                                     "sub":  "",
+                                                     "hint":  "태어날 때부터 방송된 한 남자의 가짜 세상"
+                                                 },
+                                                 {
+                                                     "id":  "movie-28",
+                                                     "image":  "assets/movie/movie-28.jpg",
+                                                     "answer":  "펄프픽션",
+                                                     "sub":  "",
+                                                     "hint":  "타란티노의 뒤섞인 시간 순서, 갱스터 군상"
+                                                 },
+                                                 {
+                                                     "id":  "movie-29",
+                                                     "image":  "assets/movie/movie-29.jpg",
+                                                     "answer":  "프로젝트헤일메리",
+                                                     "sub":  "",
+                                                     "hint":  "혼자 깨어난 우주비행사와 외계 친구의 과학 생존기"
+                                                 },
+                                                 {
+                                                     "id":  "movie-30",
+                                                     "image":  "assets/movie/movie-30.jpg",
+                                                     "answer":  "피아니스트",
+                                                     "sub":  "",
+                                                     "hint":  "전쟁의 폐허에서 살아남은 유대인 피아니스트"
+                                                 }
+                                             ]
+                                },
+                      "idol":  {
+                                   "id":  "idol",
+                                   "title":  "사진 보고 아이돌 그룹 맞히기",
+                                   "type":  "image-choice",
+                                   "prompt":  "이 아이돌 그룹의 이름은?",
+                                   "answerLabel":  "그룹명",
+                                   "pool":  [
+                                                {
+                                                    "id":  "idol-01",
+                                                    "image":  "assets/idol/idol-01.jpg",
+                                                    "answer":  "뉴진스",
+                                                    "sub":  "",
+                                                    "hint":  "토끼를 상징으로 내세운, Y2K 청량 콘셉트의 4세대 걸그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-02",
+                                                    "image":  "assets/idol/idol-02.jpg",
+                                                    "answer":  "르세라핌",
+                                                    "sub":  "",
+                                                    "hint":  "겁 없이 나아간다는 메시지를 내건 5인조 걸그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-03",
+                                                    "image":  "assets/idol/idol-03.png",
+                                                    "answer":  "리센느",
+                                                    "sub":  "",
+                                                    "hint":  "최근 데뷔한 신예 걸그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-04",
+                                                    "image":  "assets/idol/idol-04.jpg",
+                                                    "answer":  "방탄소년단",
+                                                    "sub":  "",
+                                                    "hint":  "\u0027아미\u0027라는 팬덤과 함께 세계를 사로잡은 7인조 보이그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-05",
+                                                    "image":  "assets/idol/idol-05.png",
+                                                    "answer":  "베이비몬스터",
+                                                    "sub":  "",
+                                                    "hint":  "블랙핑크 이후 YG가 선보인 신인 걸그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-06",
+                                                    "image":  "assets/idol/idol-06.jpg",
+                                                    "answer":  "브레이브걸스",
+                                                    "sub":  "",
+                                                    "hint":  "\u0027롤린\u0027이 역주행하며 다시 주목받은 걸그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-07",
+                                                    "image":  "assets/idol/idol-07.png",
+                                                    "answer":  "블랙핑크",
+                                                    "sub":  "",
+                                                    "hint":  "\u0027블링크\u0027 팬덤을 둔 YG의 대표 4인조 걸그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-08",
+                                                    "image":  "assets/idol/idol-08.png",
+                                                    "answer":  "스테이씨",
+                                                    "sub":  "",
+                                                    "hint":  "하이업 소속, 청량과 걸크러시를 오가는 걸그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-09",
+                                                    "image":  "assets/idol/idol-09.png",
+                                                    "answer":  "스트레이트키즈",
+                                                    "sub":  "",
+                                                    "hint":  "자체 프로듀싱으로 유명한 JYP 보이그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-10",
+                                                    "image":  "assets/idol/idol-10.png",
+                                                    "answer":  "아이들",
+                                                    "sub":  "",
+                                                    "hint":  "리더가 직접 곡을 만드는 걸그룹, 이름 앞에 괄호가 붙는다"
+                                                },
+                                                {
+                                                    "id":  "idol-11",
+                                                    "image":  "assets/idol/idol-11.png",
+                                                    "answer":  "아일릿",
+                                                    "sub":  "",
+                                                    "hint":  "하이브 신예, \u0027Magnetic\u0027으로 데뷔한 걸그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-12",
+                                                    "image":  "assets/idol/idol-12.png",
+                                                    "answer":  "에스파",
+                                                    "sub":  "",
+                                                    "hint":  "아바타 멤버와 \u0027광야\u0027 세계관을 내세운 SM 걸그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-13",
+                                                    "image":  "assets/idol/idol-13.jpg",
+                                                    "answer":  "엔믹스",
+                                                    "sub":  "",
+                                                    "hint":  "\u0027믹스팝\u0027을 표방하는 JYP 걸그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-14",
+                                                    "image":  "assets/idol/idol-14.jpg",
+                                                    "answer":  "엔하이픈",
+                                                    "sub":  "",
+                                                    "hint":  "오디션 프로그램에서 결성된 뱀파이어 콘셉트 보이그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-15",
+                                                    "image":  "assets/idol/idol-15.png",
+                                                    "answer":  "있지",
+                                                    "sub":  "",
+                                                    "hint":  "\u0027달라달라\u0027로 데뷔한, 자신감 콘셉트의 JYP 걸그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-16",
+                                                    "image":  "assets/idol/idol-16.jpg",
+                                                    "answer":  "캣츠아이",
+                                                    "sub":  "",
+                                                    "hint":  "하이브와 미국이 합작해 만든 글로벌 걸그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-17",
+                                                    "image":  "assets/idol/idol-17.jpg",
+                                                    "answer":  "코르티스",
+                                                    "sub":  "",
+                                                    "hint":  "최근 데뷔한 신예 보이그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-18",
+                                                    "image":  "assets/idol/idol-18.jpg",
+                                                    "answer":  "투모로우바이투게더",
+                                                    "sub":  "",
+                                                    "hint":  "방탄소년단의 동생 그룹으로 데뷔한 5인조 보이그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-19",
+                                                    "image":  "assets/idol/idol-19.jpg",
+                                                    "answer":  "트와이스",
+                                                    "sub":  "",
+                                                    "hint":  "\u0027원스\u0027 팬덤, \u0027TT\u0027 포즈로 유명한 9인조 걸그룹"
+                                                },
+                                                {
+                                                    "id":  "idol-20",
+                                                    "image":  "assets/idol/idol-20.jpg",
+                                                    "answer":  "프로미스나인",
+                                                    "sub":  "",
+                                                    "hint":  "아이돌 서바이벌에서 탄생한 9인조 걸그룹"
+                                                }
+                                            ]
+                               },
+                      "character":  {
+                                        "id":  "character",
+                                        "title":  "색깔 보고 캐릭터 맞히기",
+                                        "type":  "image-choice",
+                                        "prompt":  "이 색의 주인공 캐릭터는?",
+                                        "answerLabel":  "캐릭터",
+                                        "pool":  [
+                                                     {
+                                                         "id":  "character-01",
+                                                         "image":  "assets/character/character-01.jpg",
+                                                         "reveal":  "assets/character/character-01-reveal.jpg",
+                                                         "answer":  "강백호",
+                                                         "sub":  "슬램덩크",
+                                                         "hint":  "농구에 갓 빠진 빨강머리 초보, 북산고 풋내기"
+                                                     },
+                                                     {
+                                                         "id":  "character-02",
+                                                         "image":  "assets/character/character-02.jpg",
+                                                         "reveal":  "assets/character/character-02-reveal.jpg",
+                                                         "answer":  "고죠사토루",
+                                                         "sub":  "주술회전",
+                                                         "hint":  "눈을 가린 흰머리의 최강 주술사"
+                                                     },
+                                                     {
+                                                         "id":  "character-03",
+                                                         "image":  "assets/character/character-03.jpg",
+                                                         "reveal":  "assets/character/character-03-reveal.jpg",
+                                                         "answer":  "곰돌이푸",
+                                                         "sub":  "곰돌이푸",
+                                                         "hint":  "꿀을 사랑하는 노란 곰"
+                                                     },
+                                                     {
+                                                         "id":  "character-04",
+                                                         "image":  "assets/character/character-04.jpg",
+                                                         "reveal":  "assets/character/character-04-reveal.jpg",
+                                                         "answer":  "나루토",
+                                                         "sub":  "나루토",
+                                                         "hint":  "이마에 소용돌이 마크, 닌자 마을의 말썽꾸러기"
+                                                     },
+                                                     {
+                                                         "id":  "character-05",
+                                                         "image":  "assets/character/character-05.jpg",
+                                                         "reveal":  "assets/character/character-05-reveal.jpg",
+                                                         "answer":  "도라에몽",
+                                                         "sub":  "도라에몽",
+                                                         "hint":  "주머니에서 도구를 꺼내는 파란 로봇 고양이"
+                                                     },
+                                                     {
+                                                         "id":  "character-06",
+                                                         "image":  "assets/character/character-06.jpg",
+                                                         "reveal":  "assets/character/character-06-reveal.jpg",
+                                                         "answer":  "루피",
+                                                         "sub":  "원피스",
+                                                         "hint":  "밀짚모자를 쓴 고무 인간 해적"
+                                                     },
+                                                     {
+                                                         "id":  "character-07",
+                                                         "image":  "assets/character/character-07.jpg",
+                                                         "reveal":  "assets/character/character-07-reveal.jpg",
+                                                         "answer":  "미키마우스",
+                                                         "sub":  "디즈니",
+                                                         "hint":  "빨간 바지에 큰 귀, 가장 유명한 쥐"
+                                                     },
+                                                     {
+                                                         "id":  "character-08",
+                                                         "image":  "assets/character/character-08.jpg",
+                                                         "reveal":  "assets/character/character-08-reveal.jpg",
+                                                         "answer":  "뽀로로",
+                                                         "sub":  "뽀로로",
+                                                         "hint":  "비행 고글을 쓴 파란 펭귄"
+                                                     },
+                                                     {
+                                                         "id":  "character-09",
+                                                         "image":  "assets/character/character-09.jpg",
+                                                         "reveal":  "assets/character/character-09-reveal.jpg",
+                                                         "answer":  "사이타마",
+                                                         "sub":  "원펀맨",
+                                                         "hint":  "한 방이면 끝, 대머리에 망토를 두른 영웅"
+                                                     },
+                                                     {
+                                                         "id":  "character-10",
+                                                         "image":  "assets/character/character-10.jpg",
+                                                         "reveal":  "assets/character/character-10-reveal.jpg",
+                                                         "answer":  "손오공",
+                                                         "sub":  "드래곤볼",
+                                                         "hint":  "꼬리 달린 무술가, 흩어진 구슬을 모은다"
+                                                     },
+                                                     {
+                                                         "id":  "character-11",
+                                                         "image":  "assets/character/character-11.jpg",
+                                                         "reveal":  "assets/character/character-11-reveal.jpg",
+                                                         "answer":  "슈렉",
+                                                         "sub":  "슈렉",
+                                                         "hint":  "늪에 사는 초록 괴물"
+                                                     },
+                                                     {
+                                                         "id":  "character-12",
+                                                         "image":  "assets/character/character-12.jpg",
+                                                         "reveal":  "assets/character/character-12-reveal.jpg",
+                                                         "answer":  "슈퍼마리오",
+                                                         "sub":  "슈퍼마리오",
+                                                         "hint":  "콧수염에 빨간 모자, 버섯을 먹는 배관공"
+                                                     },
+                                                     {
+                                                         "id":  "character-13",
+                                                         "image":  "assets/character/character-13.jpg",
+                                                         "reveal":  "assets/character/character-13-reveal.jpg",
+                                                         "answer":  "슈퍼맨",
+                                                         "sub":  "DC",
+                                                         "hint":  "빨간 망토에 가슴엔 S, 크립톤에서 온 영웅"
+                                                     },
+                                                     {
+                                                         "id":  "character-14",
+                                                         "image":  "assets/character/character-14.jpg",
+                                                         "reveal":  "assets/character/character-14-reveal.jpg",
+                                                         "answer":  "스파이더맨",
+                                                         "sub":  "마블",
+                                                         "hint":  "거미줄을 쏘는 빨강·파랑 슈트의 청년"
+                                                     },
+                                                     {
+                                                         "id":  "character-15",
+                                                         "image":  "assets/character/character-15.jpg",
+                                                         "reveal":  "assets/character/character-15-reveal.jpg",
+                                                         "answer":  "스폰지밥",
+                                                         "sub":  "스폰지밥",
+                                                         "hint":  "바닷속에 사는 네모난 노란 스펀지"
+                                                     },
+                                                     {
+                                                         "id":  "character-16",
+                                                         "image":  "assets/character/character-16.jpg",
+                                                         "reveal":  "assets/character/character-16-reveal.jpg",
+                                                         "answer":  "아이언맨",
+                                                         "sub":  "마블",
+                                                         "hint":  "천재 사업가가 만든 빨강·금색 철갑 슈트"
+                                                     },
+                                                     {
+                                                         "id":  "character-17",
+                                                         "image":  "assets/character/character-17.jpg",
+                                                         "reveal":  "assets/character/character-17-reveal.jpg",
+                                                         "answer":  "우디",
+                                                         "sub":  "토이스토리",
+                                                         "hint":  "보안관 인형, 장난감들의 리더"
+                                                     },
+                                                     {
+                                                         "id":  "character-18",
+                                                         "image":  "assets/character/character-18.jpg",
+                                                         "reveal":  "assets/character/character-18-reveal.jpg",
+                                                         "answer":  "조커",
+                                                         "sub":  "배트맨",
+                                                         "hint":  "초록 머리에 보라 정장, 박쥐 영웅의 숙적"
+                                                     },
+                                                     {
+                                                         "id":  "character-19",
+                                                         "image":  "assets/character/character-19.jpg",
+                                                         "reveal":  "assets/character/character-19-reveal.jpg",
+                                                         "answer":  "짱구",
+                                                         "sub":  "짱구는못말려",
+                                                         "hint":  "엉덩이춤을 추는 다섯 살 개구쟁이"
+                                                     },
+                                                     {
+                                                         "id":  "character-20",
+                                                         "image":  "assets/character/character-20.jpg",
+                                                         "reveal":  "assets/character/character-20-reveal.jpg",
+                                                         "answer":  "케로로",
+                                                         "sub":  "케로로",
+                                                         "hint":  "지구 침략에 실패한 개구리 외계인"
+                                                     },
+                                                     {
+                                                         "id":  "character-21",
+                                                         "image":  "assets/character/character-21.jpg",
+                                                         "reveal":  "assets/character/character-21-reveal.jpg",
+                                                         "answer":  "코난",
+                                                         "sub":  "명탐정코난",
+                                                         "hint":  "몸이 작아진 고등학생 명탐정"
+                                                     },
+                                                     {
+                                                         "id":  "character-22",
+                                                         "image":  "assets/character/character-22.jpg",
+                                                         "reveal":  "assets/character/character-22-reveal.jpg",
+                                                         "answer":  "탄지로",
+                                                         "sub":  "귀멸의칼날",
+                                                         "hint":  "여동생을 위해 도깨비를 베는, 체크무늬 옷의 검사"
+                                                     },
+                                                     {
+                                                         "id":  "character-23",
+                                                         "image":  "assets/character/character-23.jpg",
+                                                         "reveal":  "assets/character/character-23-reveal.jpg",
+                                                         "answer":  "하츄핑",
+                                                         "sub":  "티니핑",
+                                                         "hint":  "마음을 지켜주는 분홍 요정 캐릭터"
+                                                     },
+                                                     {
+                                                         "id":  "character-24",
+                                                         "image":  "assets/character/character-24.jpg",
+                                                         "reveal":  "assets/character/character-24-reveal.jpg",
+                                                         "answer":  "헐크",
+                                                         "sub":  "마블",
+                                                         "hint":  "화가 나면 거대한 초록 거인이 되는 박사"
+                                                     },
+                                                     {
+                                                         "id":  "character-25",
+                                                         "image":  "assets/character/character-25.jpg",
+                                                         "reveal":  "assets/character/character-25-reveal.jpg",
+                                                         "answer":  "호빵맨",
+                                                         "sub":  "호빵맨",
+                                                         "hint":  "머리가 빵, 배고픈 이에게 얼굴을 떼어주는 영웅"
+                                                     }
+                                                 ]
+                                    },
+                      "nonsense":  {
+                                       "id":  "nonsense",
+                                       "title":  "넌센스 퀴즈",
+                                       "type":  "text-choice",
+                                       "prompt":  "",
+                                       "answerLabel":  "정답",
+                                       "pool":  [
+                                                    {
+                                                        "id":  "nonsense-01",
+                                                        "question":  "세상에서 가장 빠른 닭은?",
+                                                        "answer":  "후다닭",
+                                                        "hint":  "\u0027빠르게\u0027를 뜻하는 말이 숨어 있어요"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-02",
+                                                        "question":  "오리를 생으로 먹으면?",
+                                                        "answer":  "회오리",
+                                                        "hint":  "회를 떠올려 보세요. 빙글빙글 도는 것"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-03",
+                                                        "question":  "미국에서 비가 내리면?",
+                                                        "answer":  "USB",
+                                                        "hint":  "영어 약자 세 글자, 컴퓨터에 꽂는 것"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-04",
+                                                        "question":  "왕이 넘어지면?",
+                                                        "answer":  "킹콩",
+                                                        "hint":  "왕을 영어로 하면? 거대한 원숭이"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-05",
+                                                        "question":  "발이 두 개 달린 소는?",
+                                                        "answer":  "이발소",
+                                                        "hint":  "머리를 자르러 가는 곳"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-06",
+                                                        "question":  "추장보다 높은 사람은?",
+                                                        "answer":  "고추장",
+                                                        "hint":  "맵고 빨간 양념이 떠올라요"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-07",
+                                                        "question":  "세상에서 가장 뜨거운 과일은?",
+                                                        "answer":  "천도복숭아",
+                                                        "hint":  "온도 단위가 이름에 들어간 과일"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-08",
+                                                        "question":  "도둑이 가장 싫어하는 아이스크림은?",
+                                                        "answer":  "누가바",
+                                                        "hint":  "\u0027누가 봐\u0027를 빠르게 말해보세요"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-09",
+                                                        "question":  "방금 화장실에서 나온 사람의 국적은?",
+                                                        "answer":  "일본",
+                                                        "hint":  "볼일을 마치고 \u0027일 본\u0027 사람"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-10",
+                                                        "question":  "꼰대가 가장 좋아하는 커피는?",
+                                                        "answer":  "라떼",
+                                                        "hint":  "\u0027나 때는 말이야\u0027의 그 말장난"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-11",
+                                                        "question":  "세상에서 가장 부자인 새는?",
+                                                        "answer":  "백조",
+                                                        "hint":  "아주 큰 숫자 단위가 들어간 새"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-12",
+                                                        "question":  "소금이 죽으면?",
+                                                        "answer":  "죽염",
+                                                        "hint":  "죽은 소금, 한자로 풀어 보세요"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-13",
+                                                        "question":  "바나나가 웃으면?",
+                                                        "answer":  "바나나킥",
+                                                        "hint":  "웃으면 \u0027키득\u0027… 노란 과자 이름"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-14",
+                                                        "question":  "비가 한 시간 동안 오면?",
+                                                        "answer":  "추적 60분",
+                                                        "hint":  "60분 동안 무언가를 쫓던 옛 시사 프로그램"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-15",
+                                                        "question":  "고양이를 싫어하는 동물은?",
+                                                        "answer":  "미어캣",
+                                                        "hint":  "영어로 고양이가 들어간 사막의 동물"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-16",
+                                                        "question":  "세상에서 가장 긴 음식은?",
+                                                        "answer":  "참기름",
+                                                        "hint":  "\u0027길다\u0027를 뜻하는 말이 숨은, 고소한 기름"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-17",
+                                                        "question":  "이상한 사람들이 가는곳은?",
+                                                        "answer":  "치과",
+                                                        "hint":  "\u0027이\u0027를 치료하러 가는 곳"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-18",
+                                                        "question":  "칼이 정색하면?",
+                                                        "answer":  "검정색",
+                                                        "hint":  "칼을 뜻하는 한 글자에 색을 붙여 보세요"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-19",
+                                                        "question":  "반성문을 영어로 하면?",
+                                                        "answer":  "글로벌",
+                                                        "hint":  "글로 벌을 받는다고 생각해 보세요"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-20",
+                                                        "question":  "소가 죽으면?",
+                                                        "answer":  "다이소",
+                                                        "hint":  "영어로 \u0027죽다\u0027에 동물 하나를 붙이면"
+                                                    }
+                                                ]
+                                   }
+                  },
+    "offlineGames":  {
+                         "charade":  {
+                                         "id":  "charade",
+                                         "title":  "몸으로 말해요",
+                                         "type":  "charade",
+                                         "prompt":  "제시어를 몸으로 설명하세요",
+                                         "pool":  [
+                                                      {
+                                                          "id":  "charade-01",
+                                                          "phrase":  "원숭이도 나무에서 떨어진다",
+                                                          "level":  "쉬움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-02",
+                                                          "phrase":  "개구리 올챙이 적 생각 못 한다",
+                                                          "level":  "보통"
+                                                      },
+                                                      {
+                                                          "id":  "charade-03",
+                                                          "phrase":  "등잔 밑이 어둡다",
+                                                          "level":  "어려움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-04",
+                                                          "phrase":  "닭 쫓던 개 지붕 쳐다본다",
+                                                          "level":  "보통"
+                                                      },
+                                                      {
+                                                          "id":  "charade-05",
+                                                          "phrase":  "백지장도 맞들면 낫다",
+                                                          "level":  "보통"
+                                                      },
+                                                      {
+                                                          "id":  "charade-06",
+                                                          "phrase":  "소 잃고 외양간 고친다",
+                                                          "level":  "보통"
+                                                      },
+                                                      {
+                                                          "id":  "charade-07",
+                                                          "phrase":  "가는 날이 장날이다",
+                                                          "level":  "어려움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-08",
+                                                          "phrase":  "우물 안 개구리",
+                                                          "level":  "쉬움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-09",
+                                                          "phrase":  "미꾸라지 한 마리가 온 웅덩이를 흐린다",
+                                                          "level":  "어려움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-10",
+                                                          "phrase":  "돼지 목에 진주 목걸이",
+                                                          "level":  "쉬움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-11",
+                                                          "phrase":  "고래 싸움에 새우 등 터진다",
+                                                          "level":  "보통"
+                                                      },
+                                                      {
+                                                          "id":  "charade-12",
+                                                          "phrase":  "호랑이도 제 말 하면 온다",
+                                                          "level":  "보통"
+                                                      },
+                                                      {
+                                                          "id":  "charade-13",
+                                                          "phrase":  "까마귀 날자 배 떨어진다",
+                                                          "level":  "어려움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-14",
+                                                          "phrase":  "바늘 가는 데 실 간다",
+                                                          "level":  "보통"
+                                                      },
+                                                      {
+                                                          "id":  "charade-15",
+                                                          "phrase":  "누워서 떡 먹기",
+                                                          "level":  "쉬움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-16",
+                                                          "phrase":  "손바닥으로 하늘 가리기",
+                                                          "level":  "보통"
+                                                      },
+                                                      {
+                                                          "id":  "charade-17",
+                                                          "phrase":  "발 없는 말이 천 리 간다",
+                                                          "level":  "어려움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-18",
+                                                          "phrase":  "고양이 목에 방울 달기",
+                                                          "level":  "보통"
+                                                      },
+                                                      {
+                                                          "id":  "charade-19",
+                                                          "phrase":  "빈 수레가 요란하다",
+                                                          "level":  "어려움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-20",
+                                                          "phrase":  "가재는 게 편",
+                                                          "level":  "어려움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-21",
+                                                          "phrase":  "꿩 대신 닭",
+                                                          "level":  "쉬움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-22",
+                                                          "phrase":  "목마른 사람이 우물 판다",
+                                                          "level":  "보통"
+                                                      },
+                                                      {
+                                                          "id":  "charade-23",
+                                                          "phrase":  "낮말은 새가 듣고 밤말은 쥐가 듣는다",
+                                                          "level":  "어려움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-24",
+                                                          "phrase":  "두 손뼉이 맞아야 소리가 난다",
+                                                          "level":  "쉬움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-25",
+                                                          "phrase":  "뛰는 놈 위에 나는 놈 있다",
+                                                          "level":  "쉬움"
+                                                      },
+                                                      {
+                                                          "id":  "charade-26",
+                                                          "phrase":  "귀에 걸면 귀걸이 코에 걸면 코걸이",
+                                                          "level":  "쉬움"
+                                                      }
+                                                  ]
+                                     },
+                         "thigh":  {
+                                       "id":  "thigh",
+                                       "title":  "허벅지 씨름",
+                                       "type":  "offline",
+                                       "prompt":  "진행자 판정"
+                                   },
+                         "cup":  {
+                                     "id":  "cup",
+                                     "title":  "팀플 컵쌓기",
+                                     "type":  "offline",
+                                     "prompt":  "진행자 판정"
+                                 }
+                     }
+}

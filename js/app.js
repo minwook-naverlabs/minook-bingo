@@ -151,7 +151,7 @@ function App() {
   else view = html`<${Home} ...${ctx} />`;
 
   const showWin = state && state.winner && route !== "#/";
-  return h(Fragment, null, view, showWin ? h(WinnerOverlay, { team: state.winner }) : null);
+  return h(Fragment, null, view, showWin ? h(WinnerOverlay, { team: state.winner, isHost: route.startsWith("#/host"), onRestart: () => sync.set(null) }) : null);
 }
 
 // ===== 제목 로고 · 브랜드 =====
@@ -250,6 +250,7 @@ function GameIntroModal({ gid, games, onStart, onClose }) {
 function HostView({ games, state, sync }) {
   const [intro, setIntro] = useState(null);
   const [winSel, setWinSel] = useState(3);  // 우승 방식(줄 수) 선택
+  const [confirmReset, setConfirmReset] = useState(false);
   const reset = () => sync.set(null);        // 셋업 화면으로 되돌리기
 
   if (!state) {
@@ -310,7 +311,11 @@ function HostView({ games, state, sync }) {
       <div class="control">
         <div class="control-head">
           <h3>게임 진행</h3>
-          <button class="btn ghost small-btn" onClick=${() => { if (confirm("게임을 새로 시작할까요? 현재 판이 초기화되고 세팅 화면으로 돌아갑니다.")) reset(); }}>↻ 새로 시작</button>
+          ${confirmReset
+            ? html`<span class="reset-confirm"><span class="muted small">초기화할까요?</span>
+                <button class="btn teamB small-btn" onClick=${() => { reset(); setConfirmReset(false); }}>예</button>
+                <button class="btn ghost small-btn" onClick=${() => setConfirmReset(false)}>취소</button></span>`
+            : html`<button class="btn ghost small-btn" onClick=${() => setConfirmReset(true)}>↻ 새로 시작</button>`}
         </div>
         ${cur && state.round && state.round.mode === "charade" ? html`
           <${HostCharade} game=${cur} round=${state.round} charade=${state.charade} sync=${sync} declare=${declare} />`
@@ -738,7 +743,7 @@ function Fireworks() {
   return html`<canvas class="fw-canvas" ref=${ref}></canvas>`;
 }
 
-function WinnerOverlay({ team }) {
+function WinnerOverlay({ team, isHost, onRestart }) {
   const [show, setShow] = useState(true);
   if (!show) return null;
   const info = TEAM_INFO[team];
@@ -748,7 +753,12 @@ function WinnerOverlay({ team }) {
       <div class="win-card">
         <div class="win-emoji">🎉🏆🎉</div>
         <div class="win-text">${info.name} 우승!</div>
-        <div class="win-sub">축하합니다! · 화면을 누르면 닫혀요</div>
+        ${isHost
+          ? html`<div class="win-actions">
+              <button class="btn primary" onClick=${(e) => { e.stopPropagation(); onRestart(); }}>↻ 새 게임 시작</button>
+              <button class="btn ghost" onClick=${(e) => { e.stopPropagation(); setShow(false); }}>결과 보기</button>
+            </div>`
+          : html`<div class="win-sub">축하합니다! · 화면을 누르면 닫혀요</div>`}
       </div>
     </div>`;
 }

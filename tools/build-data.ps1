@@ -37,6 +37,15 @@ function Get-Hint($cat, $key) {
   if ($v) { return [string]$v } else { return '' }
 }
 
+# 파일명에 " or "가 있으면 복수 정답: 앞=대표 정답, 나머지=별칭(모두 정답 인정)
+function Split-Aliases($s) {
+  $parts = [regex]::Split($s, '\s+or\s+')
+  $ans = $parts[0].Trim()
+  $acc = @()
+  for ($k = 1; $k -lt $parts.Count; $k++) { $a = $parts[$k].Trim(); if ($a) { $acc += $a } }
+  return @{ answer = $ans; accept = $acc }
+}
+
 # ---------- 1) 가구 -> 브랜드 ----------
 $pool = @(); $i = 0
 Get-ChildItem -LiteralPath (Join-Path $srcRoot '퀴즈_가구') -File | Sort-Object Name | ForEach-Object {
@@ -57,9 +66,9 @@ $quizGames['furniture'] = [ordered]@{
 $pool = @(); $i = 0
 Get-ChildItem -LiteralPath (Join-Path $srcRoot '퀴즈_로고') -File | Sort-Object Name | ForEach-Object {
   $i++; $id = 'logo-{0:D2}' -f $i
-  $answer = [System.IO.Path]::GetFileNameWithoutExtension($_.Name).Trim()
+  $al = Split-Aliases ([System.IO.Path]::GetFileNameWithoutExtension($_.Name).Trim())
   $img = Copy-Asset $_.FullName 'logo' $id
-  $pool += [ordered]@{ id = $id; image = $img; answer = $answer; sub = ''; hint = (Get-Hint 'logo' $answer) }
+  $pool += [ordered]@{ id = $id; image = $img; answer = $al.answer; sub = ''; hint = (Get-Hint 'logo' $al.answer); accept = @($al.accept) }
 }
 $quizGames['logo'] = [ordered]@{
   id = 'logo'; title = '로고 보고 브랜드 맞히기'; type = 'image-choice'
@@ -70,9 +79,9 @@ $quizGames['logo'] = [ordered]@{
 $pool = @(); $i = 0
 Get-ChildItem -LiteralPath (Join-Path $srcRoot '퀴즈_영화') -File | Sort-Object Name | ForEach-Object {
   $i++; $id = 'movie-{0:D2}' -f $i
-  $answer = [System.IO.Path]::GetFileNameWithoutExtension($_.Name).Trim()
+  $al = Split-Aliases ([System.IO.Path]::GetFileNameWithoutExtension($_.Name).Trim())
   $img = Copy-Asset $_.FullName 'movie' $id
-  $pool += [ordered]@{ id = $id; image = $img; answer = $answer; sub = ''; hint = (Get-Hint 'movie' $answer) }
+  $pool += [ordered]@{ id = $id; image = $img; answer = $al.answer; sub = ''; hint = (Get-Hint 'movie' $al.answer); accept = @($al.accept) }
 }
 $quizGames['movie'] = [ordered]@{
   id = 'movie'; title = '영화 장면 보고 제목 맞히기'; type = 'image-choice'
@@ -85,9 +94,9 @@ Get-ChildItem -LiteralPath (Join-Path $srcRoot '퀴즈_아이돌') -File |
   Where-Object { $_.Extension -ne '.crdownload' -and $_.Name -notlike '미확인*' } |
   Sort-Object Name | ForEach-Object {
     $i++; $id = 'idol-{0:D2}' -f $i
-    $answer = [System.IO.Path]::GetFileNameWithoutExtension($_.Name).Trim()
+    $al = Split-Aliases ([System.IO.Path]::GetFileNameWithoutExtension($_.Name).Trim())
     $img = Copy-Asset $_.FullName 'idol' $id
-    $pool += [ordered]@{ id = $id; image = $img; answer = $answer; sub = ''; hint = (Get-Hint 'idol' $answer) }
+    $pool += [ordered]@{ id = $id; image = $img; answer = $al.answer; sub = ''; hint = (Get-Hint 'idol' $al.answer); accept = @($al.accept) }
   }
 $quizGames['idol'] = [ordered]@{
   id = 'idol'; title = '사진 보고 아이돌 그룹 맞히기'; type = 'image-choice'
@@ -117,7 +126,8 @@ foreach ($name in ($groups.Keys | Sort-Object)) {
   $i++; $id = 'character-{0:D2}' -f $i
   $imgQ = Copy-Asset $g.q 'character' $id
   $imgR = Copy-Asset $g.reveal 'character' "$id-reveal"
-  $pool += [ordered]@{ id = $id; image = $imgQ; reveal = $imgR; answer = $g.name; sub = $g.work; hint = (Get-Hint 'character' $g.name) }
+  $cal = Split-Aliases $g.name
+  $pool += [ordered]@{ id = $id; image = $imgQ; reveal = $imgR; answer = $cal.answer; sub = $g.work; hint = (Get-Hint 'character' $cal.answer); accept = @($cal.accept) }
 }
 $quizGames['character'] = [ordered]@{
   id = 'character'; title = '색깔 보고 캐릭터 맞히기'; type = 'image-choice'

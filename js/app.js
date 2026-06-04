@@ -5,7 +5,7 @@ import htm from "https://esm.sh/htm@3.1.1";
 
 import { TEAM_INFO, DEFAULT_ROOM, RULES, GAME_NAME, BRAND, HINT_MODE, GAME_INFO } from "./config.js";
 import { createSync } from "./sync.js";
-import { loadGames, getGame, isQuiz, buildRound, buildCharadeRound, matchAnswer } from "./data.js";
+import { loadGames, getGame, isQuiz, buildRound, buildCharadeRound, matchAnswer, matchesItem } from "./data.js";
 import { shuffle, evaluateWinner, teamGrid, completedLines, remainingGames, teamStats } from "./logic.js";
 
 const html = htm.bind(h);
@@ -14,7 +14,7 @@ const html = htm.bind(h);
 function isCorrect(round, i, a) {
   const it = round.items[i];
   if (!it) return false;
-  return round.mode === "choice" ? a === it.answerIndex : matchAnswer(a, it.answer);
+  return round.mode === "choice" ? a === it.answerIndex : matchesItem(a, it);
 }
 function scoreOf(round, answers) {
   if (!round || !answers) return 0;
@@ -564,7 +564,7 @@ function QuizPlayer({ round, answers, onAnswer }) {
   // 주관식: 정답이면 넘어가고, 오답이면 넘어가지 않고 다시 시도
   const submitText = () => {
     if (result || !text.trim()) return;
-    if (matchAnswer(text, item.answer)) resolve(text.trim(), true);
+    if (matchesItem(text, item)) resolve(text.trim(), true);
     else { setWrongFlash(true); setText(""); if (inputRef.current) inputRef.current.focus(); }
   };
   const pass = () => resolve("", false, "pass");

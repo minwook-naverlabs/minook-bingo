@@ -37,6 +37,7 @@ export function buildRound(game) {
       sub: p.sub || "",             // 부가정보(작품명/제품명)
       hint: p.hint || "",           // 주관식 간접 힌트
       answer: p.answer,
+      accept: p.accept || [],       // 추가로 인정할 별칭(복수 정답)
     };
     if (mode === "choice") {
       const distractors = shuffle(allAnswers.filter((a) => a !== p.answer)).slice(0, RULES.choiceCount - 1);
@@ -56,6 +57,14 @@ export function normalizeAnswer(s) {
 export function matchAnswer(input, answer) {
   const a = normalizeAnswer(input);
   return a.length > 0 && a === normalizeAnswer(answer);
+}
+
+// 정답 + 별칭(accept) 중 하나라도 맞으면 정답. accept는 배열/문자열/누락 모두 허용.
+export function matchesItem(input, item) {
+  if (!item) return false;
+  let acc = item.accept;
+  acc = Array.isArray(acc) ? acc : (acc ? [acc] : []);
+  return [item.answer, ...acc].some((a) => matchAnswer(input, a));
 }
 
 // 몸으로 말해요: 난이도 섞어 제시어 N개 뽑기

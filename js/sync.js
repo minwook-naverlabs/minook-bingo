@@ -31,9 +31,13 @@ async function createFirebaseSync({ roomId, onChange }) {
     mode: "firebase",
     get: () => current,
     set: async (next) => {
-      const value = typeof next === "function" ? next(current) : next;
-      current = value;
-      await dbMod.set(r, value);
+      if (typeof next === "function") {
+        // 동시 쓰기 충돌 방지: 항상 최신 서버 값 위에서 원자적으로 갱신
+        await dbMod.runTransaction(r, (cur) => (cur == null ? cur : next(cur)));
+      } else {
+        current = next;
+        await dbMod.set(r, next); // 전체 교체(게임 시작/초기화) — 진행자 단독 호출
+      }
     },
   };
 }

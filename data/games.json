@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "generatedAt":  "2026-06-04T23:34:39",
+                 "generatedAt":  "2026-06-04T23:43:23",
                  "quizPickCount":  10,
                  "choiceCount":  4,
                  "winLines":  2
@@ -1115,8 +1115,8 @@
                                                     {
                                                         "id":  "nonsense-03",
                                                         "question":  "미국에서 비가 내리면?",
-                                                        "answer":  "USB",
-                                                        "hint":  "영어 약자 세 글자, 컴퓨터에 꽂는 것"
+                                                        "answer":  "유에스비",
+                                                        "hint":  ""
                                                     },
                                                     {
                                                         "id":  "nonsense-04",
@@ -1219,6 +1219,66 @@
                                                         "question":  "소가 죽으면?",
                                                         "answer":  "다이소",
                                                         "hint":  "영어로 \u0027죽다\u0027에 동물 하나를 붙이면"
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-21",
+                                                        "question":  "거액의 돈을 빌려주는 섬은?",
+                                                        "answer":  "대부도",
+                                                        "hint":  ""
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-22",
+                                                        "question":  "노루가 다니는 길은?",
+                                                        "answer":  "노르웨이",
+                                                        "hint":  ""
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-23",
+                                                        "question":  "니콜이 나이가 어리면?",
+                                                        "answer":  "애니콜",
+                                                        "hint":  ""
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-24",
+                                                        "question":  "담배가 목장에 간 이유는?",
+                                                        "answer":  "말보로",
+                                                        "hint":  ""
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-25",
+                                                        "question":  "덜 뚱뚱한 사람들이 사는 동네는?",
+                                                        "answer":  "반포동",
+                                                        "hint":  ""
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-26",
+                                                        "question":  "뚱뚱한 사람들이 사는 동네는?",
+                                                        "answer":  "개포동",
+                                                        "hint":  ""
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-27",
+                                                        "question":  "뱀이 불탔다를 네글자로 말하면?",
+                                                        "answer":  "뱀파이어",
+                                                        "hint":  ""
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-28",
+                                                        "question":  "비가 올 때 하는 욕은?",
+                                                        "answer":  "비와이씨",
+                                                        "hint":  ""
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-29",
+                                                        "question":  "비가 얼어죽으면?",
+                                                        "answer":  "비동사",
+                                                        "hint":  ""
+                                                    },
+                                                    {
+                                                        "id":  "nonsense-30",
+                                                        "question":  "아들과 엄마가 택견을 하면?",
+                                                        "answer":  "모자이크",
+                                                        "hint":  ""
                                                     }
                                                 ]
                                    }

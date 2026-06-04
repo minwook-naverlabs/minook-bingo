@@ -534,7 +534,7 @@ function QuizPlayer({ round, answers, onAnswer }) {
     if (resolvedRef.current) return;
     resolvedRef.current = true;
     clearInterval(timerRef.current);
-    setResult({ value, correct, reason });
+    setResult({ value, correct, reason, idx });   // 어느 문제의 결과인지 기록
     setTimeout(() => onAnswer(value), 1500);
   };
 
@@ -561,15 +561,17 @@ function QuizPlayer({ round, answers, onAnswer }) {
 
   if (!item) return null;
 
-  const showHint = !result && hintMode !== "none" && secs <= RULES.hintAtSecondsLeft;
+  // result가 "현재 문제"의 것일 때만 표시 → 다음 문제로 넘어가는 프레임에 정답이 깜빡이는 현상 방지
+  const showResult = !!result && result.idx === idx;
+  const showHint = !showResult && hintMode !== "none" && secs <= RULES.hintAtSecondsLeft;
   const hintText = hintMode === "length" ? lengthHint(item.answer) : (hintMode === "semantic" ? item.hint : "");
   const danger = secs <= 5;
   const answerLabel = item.sub ? `${item.answer} · ${item.sub}` : item.answer;
-  const bannerLabel = result && (result.correct ? "정답!" : result.reason === "timeout" ? "시간 초과" : result.reason === "pass" ? "패스" : "오답");
+  const bannerLabel = showResult && (result.correct ? "정답!" : result.reason === "timeout" ? "시간 초과" : result.reason === "pass" ? "패스" : "오답");
 
   // 주관식: 정답이면 넘어가고, 오답이면 넘어가지 않고 다시 시도
   const submitText = () => {
-    if (result || !text.trim()) return;
+    if (showResult || !text.trim()) return;
     if (matchesItem(text, item)) resolve(text.trim(), true);
     else { setWrongFlash(true); setText(""); if (inputRef.current) inputRef.current.focus(); }
   };
@@ -588,14 +590,14 @@ function QuizPlayer({ round, answers, onAnswer }) {
       </div>
 
       <div class="quiz-stage">
-        ${item.image && html`<img class="quiz-img ${result && item.reveal ? "revealing" : ""}" src=${(result && item.reveal) ? item.reveal : item.image} alt="" />`}
+        ${item.image && html`<img class="quiz-img ${showResult && item.reveal ? "revealing" : ""}" src=${(showResult && item.reveal) ? item.reveal : item.image} alt="" />`}
         ${item.question && html`<div class="quiz-question">${item.question}</div>`}
         ${item.prompt && !item.question && html`<div class="quiz-prompt">${item.prompt}</div>`}
       </div>
 
       ${showHint && hintText && html`<div class="quiz-hint">💡 힌트 · ${hintText}</div>`}
 
-      ${result && html`<div class="result-banner ${result.correct ? "ok" : "no"}">
+      ${showResult && html`<div class="result-banner ${result.correct ? "ok" : "no"}">
         ${bannerLabel} · <b>${answerLabel}</b>
       </div>`}
 
@@ -603,22 +605,22 @@ function QuizPlayer({ round, answers, onAnswer }) {
         ? html`<div class="choices six">
             ${item.choices.map((c, i) => {
               let cls = "choice";
-              if (result) {
+              if (showResult) {
                 if (i === item.answerIndex) cls += " correct";
                 else if (i === result.value) cls += " wrong";
                 else cls += " dim";
               }
-              return html`<button class=${cls} disabled=${!!result} onClick=${() => resolve(i, i === item.answerIndex)}>${c}</button>`;
+              return html`<button class=${cls} disabled=${!!showResult} onClick=${() => resolve(i, i === item.answerIndex)}>${c}</button>`;
             })}
           </div>`
         : html`<div class="quiz-answerbox">
             <form class="quiz-inputrow" onSubmit=${(e) => { e.preventDefault(); submitText(); }}>
-              <input ref=${inputRef} class="quiz-input ${wrongFlash ? "shake" : ""}" type="text" value=${text} disabled=${!!result}
+              <input ref=${inputRef} class="quiz-input ${wrongFlash ? "shake" : ""}" type="text" value=${text} disabled=${!!showResult}
                 placeholder=${wrongFlash ? "❌ 오답! 다시 입력하세요" : "정답을 입력하세요"}
                 onInput=${(e) => { setText(e.target.value); if (wrongFlash) setWrongFlash(false); }} autocomplete="off" />
-              <button class="btn primary" type="submit" disabled=${!!result || !text.trim()}>제출</button>
+              <button class="btn primary" type="submit" disabled=${!!showResult || !text.trim()}>제출</button>
             </form>
-            <button class="btn ghost quiz-pass" disabled=${!!result} onClick=${pass}>잘 모르겠어요 · Pass →</button>
+            <button class="btn ghost quiz-pass" disabled=${!!showResult} onClick=${pass}>잘 모르겠어요 · Pass →</button>
           </div>`}
     </div>`;
 }

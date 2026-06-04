@@ -47,7 +47,8 @@ function freshState(games, winLines) {
     layouts: { A: shuffle(order), B: shuffle(order) },
     results,
     currentGame: null,
-    round: null,
+    round: null,         // 공유 라운드(몸으로 말해요 전용)
+    rounds: null,        // 팀별 라운드 { A, B } (퀴즈 — 팀마다 다른 문제)
     progress: null,
     charade: null,
     finishedAt: null,
@@ -66,9 +67,13 @@ function labelOf(gid, g) {
 function makeStartGame(games, sync) {
   return (gid) => sync.set((prev) => {
     const g = getGame(games, gid);
-    const base = { ...prev, currentGame: gid, round: null, progress: null, charade: null, finishedAt: null, updatedAt: Date.now() };
-    if (isQuiz(g)) return { ...base, round: { ...buildRound(g), startedAt: Date.now() }, progress: { A: [], B: [] }, finishedAt: { A: null, B: null } };
-    if (g.type === "charade") return { ...base, round: buildCharadeRound(g, RULES.charadeRounds), charade: { results: [], startedAt: Date.now() } };
+    const now = Date.now();
+    const base = { ...prev, currentGame: gid, round: null, rounds: null, progress: null, charade: null, finishedAt: null, updatedAt: now };
+    if (isQuiz(g)) {
+      // 팀마다 독립적으로 무작위 추출 → 같은 게임이어도 다른 문제
+      return { ...base, rounds: { A: { ...buildRound(g), startedAt: now }, B: { ...buildRound(g), startedAt: now } }, progress: { A: [], B: [] }, finishedAt: { A: null, B: null } };
+    }
+    if (g.type === "charade") return { ...base, round: buildCharadeRound(g, RULES.charadeRounds), charade: { results: [], startedAt: now } };
     return base;
   });
 }
@@ -96,11 +101,12 @@ function normalizeState(s) {
     picker: s.picker || null,
     winner: s.winner || null,
     round: s.round || null,
+    rounds: s.rounds || null,
     charade: s.charade || null,
     finishedAt: s.finishedAt || null,
     progress: s.progress || null,
   };
-  if (out.round && out.round.mode !== "charade") {
+  if (out.rounds) {
     const p = s.progress || {};
     out.progress = { A: p.A || [], B: p.B || [] };
   }
@@ -268,7 +274,7 @@ function HostView({ games, state, sync }) {
   const declare = (gid, team) => {
     sync.set((prev) => {
       const results = { ...prev.results, [gid]: team };
-      const next = { ...prev, results, currentGame: null, round: null, progress: null, charade: null, finishedAt: null, picker: team, updatedAt: Date.now() };
+      const next = { ...prev, results, currentGame: null, round: null, rounds: null, progress: null, charade: null, finishedAt: null, picker: team, updatedAt: Date.now() };
       next.winner = evaluateWinner(next);
       // 3줄 우승자가 없는데 9게임이 모두 끝났으면: 완성 줄 수 → 칸 수로 최종 결정
       if (!next.winner && remainingGames(next).length === 0) {
@@ -308,8 +314,8 @@ function HostView({ games, state, sync }) {
         </div>
         ${cur && state.round && state.round.mode === "charade" ? html`
           <${HostCharade} game=${cur} round=${state.round} charade=${state.charade} sync=${sync} declare=${declare} />`
-        : cur && state.round ? html`
-          <${HostScore} game=${cur} round=${state.round} progress=${state.progress} finishedAt=${state.finishedAt} declare=${declare} />`
+        : cur && state.rounds ? html`
+          <${HostScore} game=${cur} rounds=${state.rounds} progress=${state.progress} finishedAt=${state.finishedAt} declare=${declare} />`
         : cur ? html`
           <div class="current-box">
             <div>진행 중: <b>${cur.title}</b> <span class="muted small">(오프라인 — 진행자 판정)</span></div>
@@ -346,15 +352,15 @@ function fmtSecs(s) {
   return s >= 60 ? `${Math.floor(s / 60)}분 ${s % 60}초` : `${s}초`;
 }
 
-// 진행자: 퀴즈 점수판 + 결과/판정 (동점 시 더 빨리 끝낸 팀 승)
-function HostScore({ game, round, progress, finishedAt, declare }) {
-  const total = round.items.length;
+// 진행자: 퀴즈 점수판 + 결과/판정 (팀마다 다른 문제, 동점 시 더 빨리 끝낸 팀 승)
+function HostScore({ game, rounds, progress, finishedAt, declare }) {
   const ft = finishedAt || {};
   const stats = ["A", "B"].map((t) => {
+    const round = rounds[t];
     const ans = progress[t] || [];
     const done = isDone(round, ans);
     const secs = done && ft[t] && round.startedAt ? Math.max(0, Math.round((ft[t] - round.startedAt) / 1000)) : null;
-    return { t, count: ans.length, done, score: scoreOf(round, ans), secs };
+    return { t, count: ans.length, total: round.items.length, done, score: scoreOf(round, ans), secs };
   });
   const [a, b] = stats;
   const bothDone = a.done && b.done;
@@ -385,10 +391,10 @@ function HostScore({ game, round, progress, finishedAt, declare }) {
             <div class="sb-row">
               <span class="sb-name">${TEAM_INFO[s.t].name}</span>
               <span class="sb-score">${s.done
-                ? html`<b>${s.score}</b><span class="muted">/${total}점</span> <span class="sb-time">⏱ ${fmtSecs(s.secs)}</span>`
-                : html`<span class="muted">${s.count}/${total} 풀이중</span>`}</span>
+                ? html`<b>${s.score}</b><span class="muted">/${s.total}점</span> <span class="sb-time">⏱ ${fmtSecs(s.secs)}</span>`
+                : html`<span class="muted">${s.count}/${s.total} 풀이중</span>`}</span>
             </div>
-            <div class="sb-prog"><span style=${`width:${(s.count / total) * 100}%`}></span></div>
+            <div class="sb-prog"><span style=${`width:${(s.count / s.total) * 100}%`}></span></div>
           </div>`)}
       </div>
 
@@ -629,14 +635,15 @@ function TeamView({ team, games, state, sync }) {
   const openIntro = canPick ? (gid) => setIntro(gid) : null;
 
   const answer = (choiceIdx) => sync.set((prev) => {
-    if (!prev.round) return prev;
+    const r = prev.rounds && prev.rounds[team];
+    if (!r) return prev;
     const prog = prev.progress || {};
     const mine = prog[team] || [];
-    if (mine.length >= prev.round.items.length) return prev;
+    if (mine.length >= r.items.length) return prev;
     const updated = mine.concat([choiceIdx]);
     const nextProg = { A: prog.A || [], B: prog.B || [], [team]: updated };
     const next = { ...prev, progress: nextProg, updatedAt: Date.now() };
-    if (updated.length >= prev.round.items.length) {
+    if (updated.length >= r.items.length) {
       const ft = prev.finishedAt || {};
       next.finishedAt = { A: ft.A || null, B: ft.B || null, [team]: Date.now() };   // 완료 시각 기록(동점 시 빠른 팀 판정용)
     }
@@ -644,10 +651,11 @@ function TeamView({ team, games, state, sync }) {
   });
 
   const isCharade = cur && state.round && state.round.mode === "charade";
+  const myRound = state.rounds ? state.rounds[team] : null;   // 우리 팀 전용 라운드
   const myAns = state.progress ? (state.progress[team] || []) : [];
   const oppAns = state.progress ? (state.progress[team === "A" ? "B" : "A"] || []) : [];
-  const showQuiz = cur && state.round && !isCharade && !isDone(state.round, myAns);
-  const iAmDone = cur && state.round && !isCharade && isDone(state.round, myAns);
+  const showQuiz = cur && myRound && !isDone(myRound, myAns);
+  const iAmDone = cur && myRound && isDone(myRound, myAns);
 
   return html`
     <div class="team" style="--team:${info.color}">
@@ -660,12 +668,12 @@ function TeamView({ team, games, state, sync }) {
         ${isCharade
           ? html`<${CharadePlay} round=${state.round} charade=${state.charade} />`
         : showQuiz
-          ? html`<${QuizPlayer} round=${state.round} answers=${myAns} onAnswer=${answer} />`
+          ? html`<${QuizPlayer} round=${myRound} answers=${myAns} onAnswer=${answer} />`
         : iAmDone
           ? html`<div class="play-stub done">
               <div class="done-badge">✓ 다 풀었어요!</div>
-              <div class="done-score">${scoreOf(state.round, myAns)} <span class="muted">/ ${state.round.items.length}점</span></div>
-              <p class="muted">${isDone(state.round, oppAns) ? "결과 집계 중…" : "상대 팀이 푸는 중이에요. 잠시만 기다려 주세요."}</p>
+              <div class="done-score">${scoreOf(myRound, myAns)} <span class="muted">/ ${myRound.items.length}점</span></div>
+              <p class="muted">${isDone(state.rounds && state.rounds[team === "A" ? "B" : "A"], oppAns) ? "결과 집계 중…" : "상대 팀이 푸는 중이에요. 잠시만 기다려 주세요."}</p>
             </div>`
         : cur
           ? html`<div class="play-stub">

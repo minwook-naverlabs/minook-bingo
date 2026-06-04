@@ -1,6 +1,6 @@
 {
     "meta":  {
-                 "generatedAt":  "2026-06-03T22:02:58",
+                 "generatedAt":  "2026-06-04T23:34:39",
                  "quizPickCount":  10,
                  "choiceCount":  4,
                  "winLines":  2
@@ -27,180 +27,222 @@
                                                      {
                                                          "id":  "furniture-01",
                                                          "image":  "assets/furniture/furniture-01.jpg",
+                                                         "answer":  "노만 코펜하겐",
+                                                         "sub":  "알레아"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-02",
+                                                         "image":  "assets/furniture/furniture-02.jpg",
+                                                         "answer":  "노만 코펜하겐",
+                                                         "sub":  "휘게"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-03",
+                                                         "image":  "assets/furniture/furniture-03.jpg",
                                                          "answer":  "놀",
                                                          "sub":  "바실리 체어"
                                                      },
                                                      {
-                                                         "id":  "furniture-02",
-                                                         "image":  "assets/furniture/furniture-02.png",
+                                                         "id":  "furniture-04",
+                                                         "image":  "assets/furniture/furniture-04.png",
                                                          "answer":  "루이스폴센",
                                                          "sub":  "AJ"
                                                      },
                                                      {
-                                                         "id":  "furniture-03",
-                                                         "image":  "assets/furniture/furniture-03.png",
+                                                         "id":  "furniture-05",
+                                                         "image":  "assets/furniture/furniture-05.png",
                                                          "answer":  "루이스폴센",
                                                          "sub":  "토미시"
                                                      },
                                                      {
-                                                         "id":  "furniture-04",
-                                                         "image":  "assets/furniture/furniture-04.png",
-                                                         "answer":  "무토",
-                                                         "sub":  "도즈 라운지체어"
-                                                     },
-                                                     {
-                                                         "id":  "furniture-05",
-                                                         "image":  "assets/furniture/furniture-05.png",
-                                                         "answer":  "무토",
-                                                         "sub":  "빔 램프"
-                                                     },
-                                                     {
                                                          "id":  "furniture-06",
-                                                         "image":  "assets/furniture/furniture-06.png",
-                                                         "answer":  "무토",
-                                                         "sub":  "팁 테이블 램프"
+                                                         "image":  "assets/furniture/furniture-06.jpg",
+                                                         "answer":  "마지스",
+                                                         "sub":  "보이도"
                                                      },
                                                      {
                                                          "id":  "furniture-07",
-                                                         "image":  "assets/furniture/furniture-07.png",
-                                                         "answer":  "무토",
-                                                         "sub":  "피버 암체어"
+                                                         "image":  "assets/furniture/furniture-07.jpg",
+                                                         "answer":  "마지스",
+                                                         "sub":  "섭스턴스"
                                                      },
                                                      {
                                                          "id":  "furniture-08",
-                                                         "image":  "assets/furniture/furniture-08.png",
-                                                         "answer":  "비트라",
-                                                         "sub":  "스탠다드"
+                                                         "image":  "assets/furniture/furniture-08.jpg",
+                                                         "answer":  "마지스",
+                                                         "sub":  "스틸우드 암체어"
                                                      },
                                                      {
                                                          "id":  "furniture-09",
                                                          "image":  "assets/furniture/furniture-09.png",
-                                                         "answer":  "비트라",
-                                                         "sub":  "울탱"
+                                                         "answer":  "무토",
+                                                         "sub":  "도즈 라운지체어"
                                                      },
                                                      {
                                                          "id":  "furniture-10",
-                                                         "image":  "assets/furniture/furniture-10.jpg",
-                                                         "answer":  "비트라",
-                                                         "sub":  "임스 버드"
+                                                         "image":  "assets/furniture/furniture-10.png",
+                                                         "answer":  "무토",
+                                                         "sub":  "빔 램프"
                                                      },
                                                      {
                                                          "id":  "furniture-11",
-                                                         "image":  "assets/furniture/furniture-11.jpg",
-                                                         "answer":  "비트라",
-                                                         "sub":  "하트 콘"
+                                                         "image":  "assets/furniture/furniture-11.png",
+                                                         "answer":  "무토",
+                                                         "sub":  "팁 테이블 램프"
                                                      },
                                                      {
                                                          "id":  "furniture-12",
                                                          "image":  "assets/furniture/furniture-12.png",
-                                                         "answer":  "알레시",
-                                                         "sub":  "9093"
+                                                         "answer":  "무토",
+                                                         "sub":  "피버 암체어"
                                                      },
                                                      {
                                                          "id":  "furniture-13",
                                                          "image":  "assets/furniture/furniture-13.png",
-                                                         "answer":  "알레시",
-                                                         "sub":  "ES20"
+                                                         "answer":  "비트라",
+                                                         "sub":  "스탠다드"
                                                      },
                                                      {
                                                          "id":  "furniture-14",
                                                          "image":  "assets/furniture/furniture-14.png",
-                                                         "answer":  "알레시",
-                                                         "sub":  "메디테라네오"
+                                                         "answer":  "비트라",
+                                                         "sub":  "울탱"
                                                      },
                                                      {
                                                          "id":  "furniture-15",
-                                                         "image":  "assets/furniture/furniture-15.png",
-                                                         "answer":  "알레시",
-                                                         "sub":  "플리쎄"
+                                                         "image":  "assets/furniture/furniture-15.jpg",
+                                                         "answer":  "비트라",
+                                                         "sub":  "임스 버드"
                                                      },
                                                      {
                                                          "id":  "furniture-16",
-                                                         "image":  "assets/furniture/furniture-16.png",
-                                                         "answer":  "이케아",
-                                                         "sub":  "뒤블링에"
+                                                         "image":  "assets/furniture/furniture-16.jpg",
+                                                         "answer":  "비트라",
+                                                         "sub":  "하트 콘"
                                                      },
                                                      {
                                                          "id":  "furniture-17",
                                                          "image":  "assets/furniture/furniture-17.png",
-                                                         "answer":  "이케아",
-                                                         "sub":  "바름블릭스트"
+                                                         "answer":  "알레시",
+                                                         "sub":  "9093"
                                                      },
                                                      {
                                                          "id":  "furniture-18",
                                                          "image":  "assets/furniture/furniture-18.png",
-                                                         "answer":  "이케아",
-                                                         "sub":  "하브베리"
+                                                         "answer":  "알레시",
+                                                         "sub":  "ES20"
                                                      },
                                                      {
                                                          "id":  "furniture-19",
-                                                         "image":  "assets/furniture/furniture-19.jpg",
-                                                         "answer":  "카시나",
-                                                         "sub":  "LC3"
+                                                         "image":  "assets/furniture/furniture-19.png",
+                                                         "answer":  "알레시",
+                                                         "sub":  "메디테라네오"
                                                      },
                                                      {
                                                          "id":  "furniture-20",
-                                                         "image":  "assets/furniture/furniture-20.jpg",
-                                                         "answer":  "카시나",
-                                                         "sub":  "LC4"
+                                                         "image":  "assets/furniture/furniture-20.png",
+                                                         "answer":  "알레시",
+                                                         "sub":  "플리쎄"
                                                      },
                                                      {
                                                          "id":  "furniture-21",
                                                          "image":  "assets/furniture/furniture-21.png",
-                                                         "answer":  "프리츠한센",
-                                                         "sub":  "PK22"
+                                                         "answer":  "이케아",
+                                                         "sub":  "뒤블링에"
                                                      },
                                                      {
                                                          "id":  "furniture-22",
                                                          "image":  "assets/furniture/furniture-22.png",
-                                                         "answer":  "프리츠한센",
-                                                         "sub":  "나이트 아월"
+                                                         "answer":  "이케아",
+                                                         "sub":  "바름블릭스트"
                                                      },
                                                      {
                                                          "id":  "furniture-23",
                                                          "image":  "assets/furniture/furniture-23.png",
-                                                         "answer":  "프리츠한센",
-                                                         "sub":  "시리즈7"
+                                                         "answer":  "이케아",
+                                                         "sub":  "하브베리"
                                                      },
                                                      {
                                                          "id":  "furniture-24",
-                                                         "image":  "assets/furniture/furniture-24.png",
-                                                         "answer":  "프리츠한센",
-                                                         "sub":  "에그 체어"
+                                                         "image":  "assets/furniture/furniture-24.jpg",
+                                                         "answer":  "카스텔리",
+                                                         "sub":  "DSC 106"
                                                      },
                                                      {
                                                          "id":  "furniture-25",
-                                                         "image":  "assets/furniture/furniture-25.png",
-                                                         "answer":  "프리츠한센",
-                                                         "sub":  "엔트 체어"
+                                                         "image":  "assets/furniture/furniture-25.jpg",
+                                                         "answer":  "카스텔리",
+                                                         "sub":  "플로나"
                                                      },
                                                      {
                                                          "id":  "furniture-26",
                                                          "image":  "assets/furniture/furniture-26.jpg",
-                                                         "answer":  "허먼밀러",
-                                                         "sub":  "쉘 체어"
+                                                         "answer":  "카시나",
+                                                         "sub":  "LC3"
                                                      },
                                                      {
                                                          "id":  "furniture-27",
-                                                         "image":  "assets/furniture/furniture-27.png",
-                                                         "answer":  "허먼밀러",
-                                                         "sub":  "카펠리 스툴"
+                                                         "image":  "assets/furniture/furniture-27.jpg",
+                                                         "answer":  "카시나",
+                                                         "sub":  "LC4"
                                                      },
                                                      {
                                                          "id":  "furniture-28",
                                                          "image":  "assets/furniture/furniture-28.png",
+                                                         "answer":  "프리츠한센",
+                                                         "sub":  "PK22"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-29",
+                                                         "image":  "assets/furniture/furniture-29.png",
+                                                         "answer":  "프리츠한센",
+                                                         "sub":  "나이트 아월"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-30",
+                                                         "image":  "assets/furniture/furniture-30.png",
+                                                         "answer":  "프리츠한센",
+                                                         "sub":  "시리즈7"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-31",
+                                                         "image":  "assets/furniture/furniture-31.png",
+                                                         "answer":  "프리츠한센",
+                                                         "sub":  "에그 체어"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-32",
+                                                         "image":  "assets/furniture/furniture-32.png",
+                                                         "answer":  "프리츠한센",
+                                                         "sub":  "엔트 체어"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-33",
+                                                         "image":  "assets/furniture/furniture-33.jpg",
+                                                         "answer":  "허먼밀러",
+                                                         "sub":  "쉘 체어"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-34",
+                                                         "image":  "assets/furniture/furniture-34.png",
+                                                         "answer":  "허먼밀러",
+                                                         "sub":  "카펠리 스툴"
+                                                     },
+                                                     {
+                                                         "id":  "furniture-35",
+                                                         "image":  "assets/furniture/furniture-35.png",
                                                          "answer":  "허먼밀러",
                                                          "sub":  "폴리우드 체어"
                                                      },
                                                      {
-                                                         "id":  "furniture-29",
-                                                         "image":  "assets/furniture/furniture-29.jpg",
+                                                         "id":  "furniture-36",
+                                                         "image":  "assets/furniture/furniture-36.jpg",
                                                          "answer":  "헤이",
                                                          "sub":  "보울 테이블"
                                                      },
                                                      {
-                                                         "id":  "furniture-30",
-                                                         "image":  "assets/furniture/furniture-30.jpg",
+                                                         "id":  "furniture-37",
+                                                         "image":  "assets/furniture/furniture-37.jpg",
                                                          "answer":  "헤이",
                                                          "sub":  "엘리먼트 체어"
                                                      }
@@ -370,55 +412,62 @@
                                                 {
                                                     "id":  "logo-23",
                                                     "image":  "assets/logo/logo-23.png",
+                                                    "answer":  "쥬니버 or 주니버",
+                                                    "sub":  "",
+                                                    "hint":  ""
+                                                },
+                                                {
+                                                    "id":  "logo-24",
+                                                    "image":  "assets/logo/logo-24.png",
                                                     "answer":  "지방시",
                                                     "sub":  "",
                                                     "hint":  "오드리 헵번이 사랑한 프랑스 명품 패션 하우스"
                                                 },
                                                 {
-                                                    "id":  "logo-24",
-                                                    "image":  "assets/logo/logo-24.png",
+                                                    "id":  "logo-25",
+                                                    "image":  "assets/logo/logo-25.png",
                                                     "answer":  "크래프톤",
                                                     "sub":  "",
                                                     "hint":  "배틀그라운드를 만든 국내 게임사"
                                                 },
                                                 {
-                                                    "id":  "logo-25",
-                                                    "image":  "assets/logo/logo-25.png",
+                                                    "id":  "logo-26",
+                                                    "image":  "assets/logo/logo-26.png",
                                                     "answer":  "크린토피아",
                                                     "sub":  "",
                                                     "hint":  "동네에서 흔한 셀프·드라이 세탁 프랜차이즈"
                                                 },
                                                 {
-                                                    "id":  "logo-26",
-                                                    "image":  "assets/logo/logo-26.png",
+                                                    "id":  "logo-27",
+                                                    "image":  "assets/logo/logo-27.png",
                                                     "answer":  "틱톡",
                                                     "sub":  "",
                                                     "hint":  "짧은 세로 영상으로 전 세계가 빠진 앱"
                                                 },
                                                 {
-                                                    "id":  "logo-27",
-                                                    "image":  "assets/logo/logo-27.jpg",
+                                                    "id":  "logo-28",
+                                                    "image":  "assets/logo/logo-28.jpg",
                                                     "answer":  "푸조",
                                                     "sub":  "",
                                                     "hint":  "사자 엠블럼의 프랑스 자동차"
                                                 },
                                                 {
-                                                    "id":  "logo-28",
-                                                    "image":  "assets/logo/logo-28.png",
+                                                    "id":  "logo-29",
+                                                    "image":  "assets/logo/logo-29.png",
                                                     "answer":  "한국타이어",
                                                     "sub":  "",
                                                     "hint":  "국내 대표 타이어 제조사"
                                                 },
                                                 {
-                                                    "id":  "logo-29",
-                                                    "image":  "assets/logo/logo-29.png",
+                                                    "id":  "logo-30",
+                                                    "image":  "assets/logo/logo-30.png",
                                                     "answer":  "헤지스",
                                                     "sub":  "",
                                                     "hint":  "영국풍 트래디셔널 감성의 국내 패션 브랜드"
                                                 },
                                                 {
-                                                    "id":  "logo-30",
-                                                    "image":  "assets/logo/logo-30.png",
+                                                    "id":  "logo-31",
+                                                    "image":  "assets/logo/logo-31.png",
                                                     "answer":  "혼다",
                                                     "sub":  "",
                                                     "hint":  "오토바이와 자동차를 만드는 일본 회사, H 엠블럼"
@@ -463,181 +512,223 @@
                                                  {
                                                      "id":  "movie-05",
                                                      "image":  "assets/movie/movie-05.jpg",
+                                                     "answer":  "나홀로집에",
+                                                     "sub":  "",
+                                                     "hint":  "혼자 집에 남겨진 꼬마가 도둑들을 골탕 먹이는 크리스마스 영화"
+                                                 },
+                                                 {
+                                                     "id":  "movie-06",
+                                                     "image":  "assets/movie/movie-06.jpg",
                                                      "answer":  "니모를찾아서",
                                                      "sub":  "",
                                                      "hint":  "잃어버린 흰동가리 아들을 찾아 나선 아빠 물고기"
                                                  },
                                                  {
-                                                     "id":  "movie-06",
-                                                     "image":  "assets/movie/movie-06.jpg",
+                                                     "id":  "movie-07",
+                                                     "image":  "assets/movie/movie-07.jpg",
                                                      "answer":  "대부",
                                                      "sub":  "",
                                                      "hint":  "마피아 가문의 권력 승계를 그린 고전"
                                                  },
                                                  {
-                                                     "id":  "movie-07",
-                                                     "image":  "assets/movie/movie-07.jpg",
+                                                     "id":  "movie-08",
+                                                     "image":  "assets/movie/movie-08.jpg",
                                                      "answer":  "데드풀",
                                                      "sub":  "",
                                                      "hint":  "빨간 슈트에 입이 거친 마블 안티히어로"
                                                  },
                                                  {
-                                                     "id":  "movie-08",
-                                                     "image":  "assets/movie/movie-08.png",
+                                                     "id":  "movie-09",
+                                                     "image":  "assets/movie/movie-09.png",
                                                      "answer":  "라라랜드",
                                                      "sub":  "",
                                                      "hint":  "재즈 피아니스트와 배우 지망생의 LA 뮤지컬"
                                                  },
                                                  {
-                                                     "id":  "movie-09",
-                                                     "image":  "assets/movie/movie-09.png",
+                                                     "id":  "movie-10",
+                                                     "image":  "assets/movie/movie-10.png",
                                                      "answer":  "라붐",
                                                      "sub":  "",
                                                      "hint":  "소피 마르소, 헤드폰 장면으로 유명한 프랑스 청춘영화"
                                                  },
                                                  {
-                                                     "id":  "movie-10",
-                                                     "image":  "assets/movie/movie-10.jpg",
+                                                     "id":  "movie-11",
+                                                     "image":  "assets/movie/movie-11.jpg",
                                                      "answer":  "라이언일병구하기",
                                                      "sub":  "",
                                                      "hint":  "노르망디 상륙, 한 병사를 구하러 가는 전쟁영화"
                                                  },
                                                  {
-                                                     "id":  "movie-11",
-                                                     "image":  "assets/movie/movie-11.jpg",
+                                                     "id":  "movie-12",
+                                                     "image":  "assets/movie/movie-12.jpg",
                                                      "answer":  "라이온킹",
                                                      "sub":  "",
                                                      "hint":  "아버지를 잃고 왕으로 성장하는 사자 이야기"
                                                  },
                                                  {
-                                                     "id":  "movie-12",
-                                                     "image":  "assets/movie/movie-12.jpg",
+                                                     "id":  "movie-13",
+                                                     "image":  "assets/movie/movie-13.jpg",
+                                                     "answer":  "러브레터",
+                                                     "sub":  "",
+                                                     "hint":  "눈 덮인 마을, \u0027오겐키데스카\u0027로 유명한 일본 멜로"
+                                                 },
+                                                 {
+                                                     "id":  "movie-14",
+                                                     "image":  "assets/movie/movie-14.jpg",
                                                      "answer":  "루카",
                                                      "sub":  "",
                                                      "hint":  "이탈리아 바닷가, 사실은 바다 괴물인 소년들의 여름"
                                                  },
                                                  {
-                                                     "id":  "movie-13",
-                                                     "image":  "assets/movie/movie-13.jpg",
+                                                     "id":  "movie-15",
+                                                     "image":  "assets/movie/movie-15.jpg",
                                                      "answer":  "모아나",
                                                      "sub":  "",
                                                      "hint":  "바다가 선택한 섬마을 소녀의 항해"
                                                  },
                                                  {
-                                                     "id":  "movie-14",
-                                                     "image":  "assets/movie/movie-14.png",
+                                                     "id":  "movie-16",
+                                                     "image":  "assets/movie/movie-16.png",
                                                      "answer":  "미드소마",
                                                      "sub":  "",
                                                      "hint":  "스웨덴 백야 축제에서 벌어지는 공포"
                                                  },
                                                  {
-                                                     "id":  "movie-15",
-                                                     "image":  "assets/movie/movie-15.jpg",
+                                                     "id":  "movie-17",
+                                                     "image":  "assets/movie/movie-17.jpg",
                                                      "answer":  "반지의제왕",
                                                      "sub":  "",
                                                      "hint":  "절대반지를 파괴하러 떠나는 원정대"
                                                  },
                                                  {
-                                                     "id":  "movie-16",
-                                                     "image":  "assets/movie/movie-16.jpg",
+                                                     "id":  "movie-18",
+                                                     "image":  "assets/movie/movie-18.jpg",
                                                      "answer":  "쇼생크탈출",
                                                      "sub":  "",
                                                      "hint":  "억울한 누명, 희망을 잃지 않은 교도소 이야기"
                                                  },
                                                  {
-                                                     "id":  "movie-17",
-                                                     "image":  "assets/movie/movie-17.jpg",
+                                                     "id":  "movie-19",
+                                                     "image":  "assets/movie/movie-19.jpg",
                                                      "answer":  "스페이스오디세이",
                                                      "sub":  "",
                                                      "hint":  "검은 돌기둥과 인공지능 HAL, 큐브릭의 SF 고전"
                                                  },
                                                  {
-                                                     "id":  "movie-18",
-                                                     "image":  "assets/movie/movie-18.jpg",
+                                                     "id":  "movie-20",
+                                                     "image":  "assets/movie/movie-20.jpg",
                                                      "answer":  "아멜리아",
                                                      "sub":  "",
                                                      "hint":  "파리를 배경으로 한, 엉뚱하고 사랑스러운 여인의 이야기"
                                                  },
                                                  {
-                                                     "id":  "movie-19",
-                                                     "image":  "assets/movie/movie-19.png",
+                                                     "id":  "movie-21",
+                                                     "image":  "assets/movie/movie-21.png",
                                                      "answer":  "양들의침묵",
                                                      "sub":  "",
                                                      "hint":  "FBI 수습요원과 식인 박사의 심리 추적"
                                                  },
                                                  {
-                                                     "id":  "movie-20",
-                                                     "image":  "assets/movie/movie-20.png",
+                                                     "id":  "movie-22",
+                                                     "image":  "assets/movie/movie-22.png",
                                                      "answer":  "원스",
                                                      "sub":  "",
                                                      "hint":  "더블린 거리 음악가들의, 음악 같은 사랑"
                                                  },
                                                  {
-                                                     "id":  "movie-21",
-                                                     "image":  "assets/movie/movie-21.jpg",
+                                                     "id":  "movie-23",
+                                                     "image":  "assets/movie/movie-23.jpg",
                                                      "answer":  "위플래쉬",
                                                      "sub":  "",
                                                      "hint":  "폭군 같은 교수와 드러머의 광기 어린 연습"
                                                  },
                                                  {
-                                                     "id":  "movie-22",
-                                                     "image":  "assets/movie/movie-22.jpg",
+                                                     "id":  "movie-24",
+                                                     "image":  "assets/movie/movie-24.jpg",
                                                      "answer":  "유주얼서스팩트",
                                                      "sub":  "",
                                                      "hint":  "절름발이가 들려주는, 반전의 범죄 이야기"
                                                  },
                                                  {
-                                                     "id":  "movie-23",
-                                                     "image":  "assets/movie/movie-23.jpg",
+                                                     "id":  "movie-25",
+                                                     "image":  "assets/movie/movie-25.jpg",
                                                      "answer":  "인생은아름다워",
                                                      "sub":  "",
                                                      "hint":  "수용소에서 아들에게 게임이라 속인 아버지"
                                                  },
                                                  {
-                                                     "id":  "movie-24",
-                                                     "image":  "assets/movie/movie-24.jpg",
+                                                     "id":  "movie-26",
+                                                     "image":  "assets/movie/movie-26.jpg",
                                                      "answer":  "인터스텔라",
                                                      "sub":  "",
                                                      "hint":  "딸을 두고 떠난 우주, 시간과 중력의 SF"
                                                  },
                                                  {
-                                                     "id":  "movie-25",
-                                                     "image":  "assets/movie/movie-25.jpg",
+                                                     "id":  "movie-27",
+                                                     "image":  "assets/movie/movie-27.jpg",
+                                                     "answer":  "죽은시인의사회",
+                                                     "sub":  "",
+                                                     "hint":  "\u0027카르페 디엠\u0027을 외친 선생님과 기숙학교 학생들"
+                                                 },
+                                                 {
+                                                     "id":  "movie-28",
+                                                     "image":  "assets/movie/movie-28.jpg",
+                                                     "answer":  "중경삼림",
+                                                     "sub":  "",
+                                                     "hint":  "왕가위 감독, 홍콩 도시의 엇갈리는 두 사랑 이야기"
+                                                 },
+                                                 {
+                                                     "id":  "movie-29",
+                                                     "image":  "assets/movie/movie-29.jpg",
                                                      "answer":  "큐브",
                                                      "sub":  "",
                                                      "hint":  "함정 가득한 정육면체 방에 갇힌 사람들"
                                                  },
                                                  {
-                                                     "id":  "movie-26",
-                                                     "image":  "assets/movie/movie-26.jpg",
+                                                     "id":  "movie-30",
+                                                     "image":  "assets/movie/movie-30.jpg",
+                                                     "answer":  "킬빌",
+                                                     "sub":  "",
+                                                     "hint":  "노란 트랙수트의 여전사가 복수에 나서는 타란티노 영화"
+                                                 },
+                                                 {
+                                                     "id":  "movie-31",
+                                                     "image":  "assets/movie/movie-31.jpg",
                                                      "answer":  "토이스토리",
                                                      "sub":  "",
                                                      "hint":  "주인이 없을 때 살아 움직이는 장난감들"
                                                  },
                                                  {
-                                                     "id":  "movie-27",
-                                                     "image":  "assets/movie/movie-27.png",
+                                                     "id":  "movie-32",
+                                                     "image":  "assets/movie/movie-32.png",
                                                      "answer":  "트루먼쇼",
                                                      "sub":  "",
                                                      "hint":  "태어날 때부터 방송된 한 남자의 가짜 세상"
                                                  },
                                                  {
-                                                     "id":  "movie-28",
-                                                     "image":  "assets/movie/movie-28.jpg",
+                                                     "id":  "movie-33",
+                                                     "image":  "assets/movie/movie-33.jpg",
                                                      "answer":  "펄프픽션",
                                                      "sub":  "",
                                                      "hint":  "타란티노의 뒤섞인 시간 순서, 갱스터 군상"
                                                  },
                                                  {
-                                                     "id":  "movie-29",
-                                                     "image":  "assets/movie/movie-29.jpg",
+                                                     "id":  "movie-34",
+                                                     "image":  "assets/movie/movie-34.png",
+                                                     "answer":  "포레스트검프",
+                                                     "sub":  "",
+                                                     "hint":  "\u0027인생은 초콜릿 상자\u0027 명대사, 우직하게 달려온 남자의 일대기"
+                                                 },
+                                                 {
+                                                     "id":  "movie-35",
+                                                     "image":  "assets/movie/movie-35.jpg",
                                                      "answer":  "프로젝트헤일메리",
                                                      "sub":  "",
                                                      "hint":  "혼자 깨어난 우주비행사와 외계 친구의 과학 생존기"
                                                  },
                                                  {
-                                                     "id":  "movie-30",
-                                                     "image":  "assets/movie/movie-30.jpg",
+                                                     "id":  "movie-36",
+                                                     "image":  "assets/movie/movie-36.jpg",
                                                      "answer":  "피아니스트",
                                                      "sub":  "",
                                                      "hint":  "전쟁의 폐허에서 살아남은 유대인 피아니스트"
